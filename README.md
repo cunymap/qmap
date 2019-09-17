@@ -3,7 +3,20 @@ CS 355 Term Project
 
 # **CunyMap**(tentative title)
 ## **Project Members :**
-(List members here)
+Ahmad Fawad
+Arthur Heesun
+Ehsan Yasin A
+Graber Shlomo
+Htet Joseph Kaung
+Lange Bryan Y
+Legendre Bertin Junior
+Lei Ming
+Lomax Richard A
+Nikitina Maria D
+Ross Matthew O
+Singh Harmandeep
+Wang Xiaoxiao
+Wu Evan
 
 ## **Project Scope :**
 #### Creating a website that will allow a student to view the most successful course path to graduating quickly
@@ -34,6 +47,15 @@ There will be 2 teams, Frontend and Backend
     - Venus
 
 ## **Project Data Need:**
+All data should be in a format that can be read using MySQL
+CRSE_CATALOG
+CRSE_OFFER
+Prerequisite structure for all offered courses, seperated by college
+Major requirements for all included majors, seperated by college
+Minor requirements for all included minors, seperated by college
+Graduation requirements for all included colleges (including what gen eds are required, and how many credits are required)
+Which semesters each course is offered
+How many credits each course is worth
 
 ## **Project Milestones:**
 1. **9/12** - Assignment
