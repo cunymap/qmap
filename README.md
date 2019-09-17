@@ -3,20 +3,20 @@ CS 355 Term Project
 
 # **CunyMap**(tentative title)
 ## **Project Members :**
-Ahmad Fawad
-Arthur Heesun
-Ehsan Yasin A
-Graber Shlomo
-Htet Joseph Kaung
-Lange Bryan Y
-Legendre Bertin Junior
-Lei Ming
-Lomax Richard A
-Nikitina Maria D
-Ross Matthew O
-Singh Harmandeep
-Wang Xiaoxiao
-Wu Evan
+Ahmad Fawad<br>
+Arthur Heesun<br>
+Ehsan Yasin A<br>
+Graber Shlomo<br>
+Htet Joseph Kaung<br>
+Lange Bryan Y<br>
+Legendre Bertin Junior<br>
+Lei Ming<br>
+Lomax Richard A<br>
+Nikitina Maria D<br>
+Ross Matthew O<br>
+Singh Harmandeep<br>
+Wang Xiaoxiao<br>
+Wu Evan<br>
 
 ## **Project Scope :**
 #### Creating a website that will allow a student to view the most successful course path to graduating quickly
@@ -47,15 +47,15 @@ There will be 2 teams, Frontend and Backend
     - Venus
 
 ## **Project Data Need:**
-All data should be in a format that can be read using MySQL
-CRSE_CATALOG
-CRSE_OFFER
-Prerequisite structure for all offered courses, seperated by college
-Major requirements for all included majors, seperated by college
-Minor requirements for all included minors, seperated by college
-Graduation requirements for all included colleges (including what gen eds are required, and how many credits are required)
-Which semesters each course is offered
-How many credits each course is worth
+All data should be in a format that can be read using MySQL<br>
+CRSE_CATALOG<br>
+CRSE_OFFER<br>
+Prerequisite structure for all offered courses, seperated by college<br>
+Major requirements for all included majors, seperated by college<br>
+Minor requirements for all included minors, seperated by college<br>
+Graduation requirements for all included colleges (including what gen eds are required, and how many credits are required)<br>
+Which semesters each course is offered<br>
+How many credits each course is worth<br>
 
 ## **Project Milestones:**
 1. **9/12** - Assignment
