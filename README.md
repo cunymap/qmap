@@ -20,17 +20,14 @@ Wu Evan<br>
 
 ## **Project Scope :**
 #### Creating a website that will allow a student to view the most successful course path to graduating quickly
-- Project will be divided into groups with a heavy focus on technical direction<br>
-There will be 2 teams, Frontend and Backend
-    - The Frontend team will be focusing on the web stack's frontend layer
-        - They will be responsible for establishing the entire UX and UI experience of the website, with a strong focus on efficient deliverability and a quality experience
-        - This will include managing a unified project management system, separate from the Backend teams' but related to the main project's goals as dictated by leads and director
-    - The Backend team will be focusing on the entire backend stack of the application
-        - They will be responsible for implementing the programmatic backbone of the application, with a strong focus on scalability and modularity to be efficient in integrating with the other layers
-        - This will include managing a separate project management system as well as implementing the entire data layer
-- The infrastructure layer of the project will be a shared responsibility between teams, with teams leads negotiating closely with team director on how it should be setup most appropriately for project needs
-    - Both teams will work in the same repository while isolating their code using the MVC workflow style
-    - The infrastructure layer will not have a direct team allocation and thusly will not have a project management system. It will be the responsibility of each team to negotiate needs on a case by case basis with leads and the director to have the infrastructure requirements handled
+Ensure project is scalable to all cuny<br>
+Include data from several QC majors<br>
+Include login and accounts for admin and sysadmin, public access for students<br>
+Support admins in adding graduation maps to system<br>
+Implement API to connect frontend and backend<br>
+Create working website for user interface<br>
+Create working backend to process data<br>
+Implement ability to read relevant data from databases<br>
 
 
 ## **Project Technologys:**
@@ -50,11 +47,8 @@ There will be 2 teams, Frontend and Backend
 All data should be in a format that can be read using MySQL<br>
 CRSE_CATALOG<br>
 CRSE_OFFER<br>
-Prerequisite structure for all offered courses, seperated by college<br>
 Major requirements for all included majors, seperated by college<br>
-Minor requirements for all included minors, seperated by college<br>
 Graduation requirements for all included colleges (including what gen eds are required, and how many credits are required)<br>
-Which semesters each course is offered<br>
 How many credits each course is worth<br>
 
 ## **Project Milestones:**
