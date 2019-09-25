@@ -1,21 +1,23 @@
 # **qmap**
 CS 355 Term Project
 
-# **CunyMap**(tentative title)
+# **CunyMap**
 ## **Project Members :**
-Ahmad Fawad<br>
-Arthur Heesun<br>
+**Frontend:**
+Team Leader: Lei Ming<br>
 Ehsan Yasin A<br>
-Graber Shlomo<br>
-Htet Joseph Kaung<br>
-Lange Bryan Y<br>
 Legendre Bertin Junior<br>
-Lei Ming<br>
-Lomax Richard A<br>
 Nikitina Maria D<br>
 Ross Matthew O<br>
-Singh Harmandeep<br>
 Wang Xiaoxiao<br>
+**Backend:**<br>
+Project Leader: Graber Shlomo<br>
+Team Leader: Lomax Richard A<br>
+Ahmad Fawad<br>
+Arthur Heesun<br>
+Htet Joseph Kaung<br>
+Lange Bryan Y<br>
+Singh Harmandeep<br>
 Wu Evan<br>
 
 ## **Project Scope :**
@@ -34,7 +36,9 @@ Implement ability to read relevant data from databases<br>
 - Frontend
     - HTML5
     - ReactJS
-    - Bootstrap
+    - Bootstrap<br>
+    - Complement HTML5up.net website template with Bootstrap/Materlize.css<br>
+	- Future Iteration: use jquery and reactjs frontend<br>
 - Backend
     - Python
     - MySQL
