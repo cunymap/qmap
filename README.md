@@ -48,7 +48,7 @@ Implement ability to read relevant data from databases<br>
     - Venus
 
 ## **Project Data Need:**
-All data should be in a format that can be read using MySQL<br>
+Data should be in an SQL dump file<br>
 CRSE_CATALOG<br>
 CRSE_OFFER<br>
 Major requirements for all included majors, seperated by college<br>
