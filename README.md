@@ -40,7 +40,7 @@ Implement ability to read relevant data from databases<br>
     - Complement HTML5up.net website template with Bootstrap/Materlize.css<br>
 	- Future Iteration: use jquery and reactjs frontend<br>
 - Backend
-    - Python
+    - Python 3
     - MySQL
 - Infrastructure
     - Github
