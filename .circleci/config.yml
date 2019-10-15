@@ -4,9 +4,6 @@ jobs:
     docker:
       - image: circleci/python:3
     steps:
-      - add_ssh_keys:
-          fingerprints:
-            - "92:ed:55:c4:55:80:1f:6b:93:26:74:43:98:99:3c:cb"
       - checkout
       - run: make ssh-ok
       - run: make update-backend
