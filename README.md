@@ -34,7 +34,7 @@ Implement ability to read relevant data from databases<br>
 
 ## **Project Technologys:**
 - Frontend
-    - HTML5
+    - HTML5,
     - ReactJS
     - Bootstrap<br>
     - Complement HTML5up.net website template with Bootstrap/Materlize.css<br>
