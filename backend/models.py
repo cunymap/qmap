@@ -7,7 +7,6 @@
 # Feel free to rename the models, but don't rename db_table values or field names.
 from django.db import models
 
-
 class Admin(models.Model):
     cuny_id = models.CharField(db_column='CUNY_ID', primary_key=True, max_length=8)  # Field name made lowercase.
     username = models.CharField(db_column='USERNAME', unique=True, max_length=20)  # Field name made lowercase.
@@ -473,3 +472,30 @@ class PsTstCreditCrse(models.Model):
         db_table = 'PS_TST_CREDIT_CRSE'
         unique_together = (('institution', 'tst_eqvlncy', 'effdt', 'test_id', 'test_component', 'trnsfr_eqvlncy_cmp', 'crse_id'),)
 
+
+class DjangoContentType(models.Model):
+    name = models.CharField(max_length=100)
+    app_label = models.CharField(max_length=100)
+    model = models.CharField(max_length=100)
+
+    class Meta:
+        managed = False
+        db_table = 'django_content_type'
+
+
+class DjangoMigrations(models.Model):
+    app = models.CharField(max_length=255)
+    name = models.CharField(max_length=255)
+    applied = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'django_migrations'
+
+
+class Tirsttable(models.Model):
+    bubu = models.CharField(max_length=20, blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = 'tirsttable'
