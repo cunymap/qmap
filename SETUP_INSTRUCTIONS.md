@@ -39,6 +39,13 @@ Required for API usage. See [Notes](https://docs.djangoproject.com/en/2.2/ref/da
 
 <hr>
 
+#Development Server
+
+After completing the above steps, we are now ready to run the development server. To do so, navigate to the project directory (backend) and run the command:
+
+        python3 manage.py runserver
+
+
 
 
         
