@@ -7,6 +7,7 @@
 # Feel free to rename the models, but don't rename db_table values or field names.
 from django.db import models
 
+
 class Admin(models.Model):
     cuny_id = models.CharField(db_column='CUNY_ID', primary_key=True, max_length=8)  # Field name made lowercase.
     username = models.CharField(db_column='USERNAME', unique=True, max_length=20)  # Field name made lowercase.
@@ -21,7 +22,7 @@ class Admin(models.Model):
 
 
 class PsCrseCatalog(models.Model):
-    crse_id = models.CharField(db_column='CRSE_ID', max_length=6)  # Field name made lowercase.
+    crse_id = models.CharField(db_column='CRSE_ID', max_length=6, primary_key=True)  # Field name made lowercase.
     effdt = models.DateTimeField(db_column='EFFDT')  # Field name made lowercase.
     eff_status = models.CharField(db_column='EFF_STATUS', max_length=1)  # Field name made lowercase.
     descr = models.CharField(db_column='DESCR', max_length=30)  # Field name made lowercase.
