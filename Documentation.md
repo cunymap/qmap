@@ -1,13 +1,13 @@
-#QMAP BACKEND DOCUMENTATION
+# QMAP BACKEND DOCUMENTATION
 <hr>
 
 This documentation contains the steps that were followed to install and setup the backend. 
 
-##Django ORM Framework Setup  
+## Django ORM Framework Setup  
 
 To install django, I followed these steps using this tutorial [(How to install Django)](https://docs.djangoproject.com/en/2.2/topics/install)
 
-###Django Installation Steps
+### Django Installation Steps
 
 1. Install pip if not already installed. 
 
@@ -30,7 +30,7 @@ To install django, I followed these steps using this tutorial [(How to install D
         pip3 install django
 
 
-###SQLClient Installation Steps
+### SQLClient Installation Steps
 
 Required for API usage. See [Notes](https://docs.djangoproject.com/en/2.2/ref/databases/#mysql-notes).
 
@@ -44,7 +44,7 @@ Required for API usage. See [Notes](https://docs.djangoproject.com/en/2.2/ref/da
 
 <hr>
 
-##Creating the Django Project
+## Creating the Django Project
 
 After completing the above steps, we can now create the project. I followed this [tutorial](https://www.django-rest-framework.org/tutorial/quickstart/). (It is recommended to read this and try it on your own if you are unfamiliar with django)
 
@@ -55,7 +55,7 @@ To create a project, run this command:
 
 In our case, I used 'backend' instead of 'mysite'.
 
-##Running the Development Server
+## Running the Development Server
 
 We are now ready to run the development server. To run the server, navigate to the project directory (backend) and run the command:
 
@@ -63,7 +63,7 @@ We are now ready to run the development server. To run the server, navigate to t
 
 If everything went well, you should be able to go to http://127.0.0.1:8000 and see the default project page.
 
-##Integrating Django to Database
+## Integrating Django to Database
 
 I followed this tutorial to integrate the database. [(Integrating Django with a legacy database)](https://docs.djangoproject.com/en/2.2/howto/legacy-databases/)
 
@@ -77,7 +77,7 @@ which will look through the database and create models.py containing the models 
 
 Note: we will need to re-integrate as our database design changes.
 
-##Executing Test Queries
+## Executing Test Queries
 
 Now that everything is setup, we can run a test query to see that the connection from DB to ORM is working as it should.
 
