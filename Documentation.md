@@ -90,9 +90,6 @@ Once in the shell, execute these commands:
         #We will test the PsCrseCatalog table, so import it
         >>>from backend.models import PsCrseCatalog
 
-        #Also import this to print our results
-        >>>from django.db import connection
-
         #Now get the first row of this table
         >>>x = PsCrseCatalog.objects.all()[:1]
 
