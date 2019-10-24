@@ -98,7 +98,15 @@ Once in the shell, execute these commands:
 
 You should see this:
 
-        <QuerySet [{'min_units': '3', 'institute_id': 18, 'status': 'A', 'catalog': '121', 'descr': 'Two-Dimensional Design', 'eff_date': datetime.date(2014, 9, 1), 'course_id': '000027', 'max_units': '3', 'subject': 'ARTS', 'designation': 'RNL'}, {'min_units': '3', 'institute_id': 18, 'status': 'A', 'catalog': '122', 'descr': 'Three Dmnsnl Dsgn', 'eff_date': datetime.date(2014, 9, 1), 'course_id': '000029', 'max_units': '3', 'subject': 'ARTS', 'designation': 'RNL'}, {'min_units': '3', 'institute_id': 18, 'status': 'A', 'catalog': '221', 'descr': 'Color Theory', 'eff_date': datetime.date(2014, 9, 1), 'course_id': '000032', 'max_units': '3', 'subject': 'ARTS', 'designation': 'RNL'}, {'min_units': '1', 'institute_id': 18, 'status': 'A', 'catalog': '198', 'descr': 'Art and Photo Non-Lib Arts Ele', 'eff_date': datetime.date(2009, 1, 17), 'course_id': '000035', 'max_units': '5', 'subject': 'AR', 'designation': 'MNL'}, {'min_units': '1', 'institute_id': 18, 'status': 'A', 'catalog': '199', 'descr': 'Art and Photo Liberal Art Elec', 'eff_date': datetime.date(2009, 1, 1), 'course_id': '000036', 'max_units': '5', 'subject': 'AR', 'designation': 'MLA'}]>
+        <QuerySet [{'min_units': '3', 'institute_id': 18, 'status': 'A', 'catalog': '121', 'descr': 'Two-Dimensional Design', 
+        'eff_date': datetime.date(2014, 9, 1), 'course_id': '000027', 'max_units': '3', 'subject': 'ARTS', 'designation': 'RNL'}, 
+        {'min_units': '3', 'institute_id': 18, 'status': 'A', 'catalog': '122', 'descr': 'Three Dmnsnl Dsgn', 'eff_date': 
+        datetime.date(2014, 9, 1), 'course_id': '000029', 'max_units': '3', 'subject': 'ARTS', 'designation': 'RNL'}, {'min_units': '3', 'institute_id': 18, 'status': 'A', 'catalog': '221', 'descr': 'Color Theory', 'eff_date': datetime.date(2014, 9, 1), 'course_id': 
+        '000032', 'max_units': '3', 'subject': 'ARTS', 'designation': 'RNL'}, {'min_units': '1', 'institute_id': 18, 'status': 'A', 
+        'catalog': '198', 'descr': 'Art and Photo Non-Lib Arts Ele', 'eff_date': datetime.date(2009, 1, 17), 'course_id': '000035', 
+        'max_units': '5', 'subject': 'AR', 'designation': 'MNL'}, {'min_units': '1', 'institute_id': 18, 'status': 'A', 'catalog': 
+        '199', 'descr': 'Art and Photo Liberal Art Elec', 'eff_date': datetime.date(2009, 1, 1), 'course_id': '000036', 'max_units': 
+        '5', 'subject': 'AR', 'designation': 'MLA'}]>
 
 (Reference: https://docs.djangoproject.com/en/2.2/topics/db/queries/)
 
