@@ -87,38 +87,18 @@ Start a python shell in context to manage.py:
 
 Once in the shell, execute these commands:
 
-        #We will test the PsCrseCatalog table, so import it
-        >>>from backend.models import PsCrseCatalog
+        #We will test the MapsCrseCatalog table, so import it
+        >>>from backend.models import MapsCrseCatalog
 
-        #Now get the first row of this table
-        >>>x = PsCrseCatalog.objects.all()[:1]
+        #Let's try to query the first 5 rows of this table
+        >>>x = MapsCrseCatalog.objects.all()[:5]
 
         #Now, for the results
         >>>x.values()
 
 You should see this:
 
-        <QuerySet [{'rqmnt_designtn': 'RNL', 'effdt': datetime.datetime(1901, 1, 1, 0, 0, tzinfo=<UTC>)
-        , 'eff_status': 'A', 'fees_exist': 'N', 'instructor_edit': 'N', 'scc_row_upd_dttm': None, 'descr': 'Intro To Hist Art', 'consent': 
-        'N', 'course_title_long': 'Intro To Hist Art', 'units_maximum':
-         Decimal('3.00'), 'ssr_drop_consent': 'N', 'crse_repeat_limit':
-          Decimal('99'), 'scc_row_add_oprid': '', 'lst_mult_trm_crs': 'N', 'crse_contact_hrs': Decimal('3.00'), 'allow_mult_enroll': 'Y', 
-         'scc_row_upd_oprid': '', 'scc_row_add_dttm': None, 'component_primary': 'LEC', 'crse_id': '000001', 'grading_basis': 
-         'GRD', 'units_minimum': Decimal('3.00'), 'crse_count': Decimal('1.00'), 'units_repeat_limit': Decimal('999.99'), 'units_finaid_prog': 
-         Decimal('3.00'), 'equiv_crse_id': '', 'enrl_un_ld_clc_typ': '2', 'crse_repeatable': 'Y', 'ssr_component': 'LEC', 'grade_roster_print': 
-         'C', 'units_acad_prog': Decimal('3.00'), 'descrlong': 'Intro To Hist 
-         Art'}]>
-
-(I ran into an error where the primary keys in the models.py are not specified.
-I was able to fix it by adding the parameter "primary_key=True")
-
-For example, to add a primary key to PsCrseCatalog:
-
-        #Before
-    crse_id = models.CharField(db_column='CRSE_ID', max_length=6)  # Field name made lowercase.
-
-        #After
-    crse_id = models.CharField(db_column='CRSE_ID', max_length=6, primary_key=True)  # Field name made lowercase.
+        <QuerySet [{'min_units': '3', 'institute_id': 18, 'status': 'A', 'catalog': '121', 'descr': 'Two-Dimensional Design', 'eff_date': datetime.date(2014, 9, 1), 'course_id': '000027', 'max_units': '3', 'subject': 'ARTS', 'designation': 'RNL'}, {'min_units': '3', 'institute_id': 18, 'status': 'A', 'catalog': '122', 'descr': 'Three Dmnsnl Dsgn', 'eff_date': datetime.date(2014, 9, 1), 'course_id': '000029', 'max_units': '3', 'subject': 'ARTS', 'designation': 'RNL'}, {'min_units': '3', 'institute_id': 18, 'status': 'A', 'catalog': '221', 'descr': 'Color Theory', 'eff_date': datetime.date(2014, 9, 1), 'course_id': '000032', 'max_units': '3', 'subject': 'ARTS', 'designation': 'RNL'}, {'min_units': '1', 'institute_id': 18, 'status': 'A', 'catalog': '198', 'descr': 'Art and Photo Non-Lib Arts Ele', 'eff_date': datetime.date(2009, 1, 17), 'course_id': '000035', 'max_units': '5', 'subject': 'AR', 'designation': 'MNL'}, {'min_units': '1', 'institute_id': 18, 'status': 'A', 'catalog': '199', 'descr': 'Art and Photo Liberal Art Elec', 'eff_date': datetime.date(2009, 1, 1), 'course_id': '000036', 'max_units': '5', 'subject': 'AR', 'designation': 'MLA'}]>
 
 (Reference: https://docs.djangoproject.com/en/2.2/topics/db/queries/)
 
