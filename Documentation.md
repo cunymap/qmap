@@ -30,17 +30,47 @@ To install django, I followed these steps using this tutorial [(How to install D
         pip3 install django
 
 
-### SQLClient Installation Steps
+### SQLClient Installation Steps 
 
 Required for API usage. See [Notes](https://docs.djangoproject.com/en/2.2/ref/databases/#mysql-notes).
+
+#### Ubuntu
 
 1. Install Prerequisites:
 
         sudo apt-get install python3-dev libmysqlclient-dev
 
-2. Install SQLClient:
+2. Install SQLClient
 
         pip3 install mysqlclient
+
+#### MacOS
+
+Here are the steps:
+
+        brew uninstall mysql
+        brew uninstall myysql-connector-c
+        pipenv uninstall mysqlclient
+        brew install mysql-connector-c
+
+At this point we need to update /usr/local/bin/mysql_config as per the instructions that conor linked to (thanks again conor), i.e. change the line that read
+        libs="$libs -l "
+to
+        libs="$libs -lmysqlclient -lssl -lcrypto "
+
+Then, to fix the resultant "library not found for -lssl" error I used the answer from this question:
+
+        export PATH="/usr/local/opt/openssl/bin:$PATH"
+        export LDFLAGS="-L/usr/local/opt/openssl/lib"
+        export CPPFLAGS="-I/usr/local/opt/openssl/include"
+        
+Then finally force mysqlclient to recompile and reinstall mysql:
+
+        pip install --force-reinstall --ignore-installed --no-binary :all: mysqlclient
+        brew unlink mysql-connector-c
+        brew install mysql
+        
+[Source](https://stackoverflow.com/questions/56115144/fresh-python-3-7-django-2-2-1-installation-not-recognising-that-mysqlclient-is?noredirect=1&lq=1)
 
 <hr>
 
