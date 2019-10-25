@@ -53,9 +53,9 @@ Here are the steps:
         pipenv uninstall mysqlclient
         brew install mysql-connector-c
 
-At this point we need to update /usr/local/bin/mysql_config as per the instructions that conor linked to (thanks again conor), i.e. change the line that read
+At this point we need to update /usr/local/bin/mysql_config. Change the line that read:
         libs="$libs -l "
-to
+to:
         libs="$libs -lmysqlclient -lssl -lcrypto "
 
 Then, to fix the resultant "library not found for -lssl" error I used the answer from this question:
