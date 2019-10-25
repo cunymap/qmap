@@ -66,10 +66,15 @@ Then, to fix the resultant "library not found for -lssl" error:
         export LDFLAGS="-L/usr/local/opt/openssl/lib"
         export CPPFLAGS="-I/usr/local/opt/openssl/include"
         
-If, it still does't work. Uninstall openssl and reinstall it:
+If, it still doesn't work. Uninstall openssl and reinstall it:
         
         brew uninstall openssl
         brew install openssl
+        
+Add the following line of code into ~/.bash_profile file:
+
+        export PATH=/usr/local/bin:$PATH
+
         
 Then finally force mysqlclient to recompile and reinstall mysql:
 
