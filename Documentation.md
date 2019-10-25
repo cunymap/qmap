@@ -54,8 +54,10 @@ Here are the steps:
         brew install mysql-connector-c
 
 At this point we need to update /usr/local/bin/mysql_config. Change the line that read:
+        
         libs="$libs -l "
 to:
+        
         libs="$libs -lmysqlclient -lssl -lcrypto "
 
 Then, to fix the resultant "library not found for -lssl" error I used the answer from this question:
