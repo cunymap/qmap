@@ -50,7 +50,7 @@ Here are the steps:
 
         brew uninstall mysql
         brew uninstall myysql-connector-c
-        pipenv uninstall mysqlclient
+        pip uninstall mysqlclient
         brew install mysql-connector-c
 
 At this point we need to update /usr/local/bin/mysql_config. Change the line that read:
