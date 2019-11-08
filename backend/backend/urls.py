@@ -20,7 +20,7 @@ from . import views
 
 
 router = routers.DefaultRouter()
-router.register(r'maps', views.MapsViewSet)
+#router.register(r'maps', views.MapsViewSet)
 router.register(r'campuses', views.CampusView)
 
 
