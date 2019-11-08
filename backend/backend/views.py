@@ -2,6 +2,9 @@ from .models import MapsCrseCatalog, MapsInstitutions
 from rest_framework import viewsets
 from .serializers import MapsCrsCatSerializer, CampusSerializer
 
+"""
+Create new view sets as classes in this file
+"""
 
 class MapsViewSet(viewsets.ModelViewSet):
     """
