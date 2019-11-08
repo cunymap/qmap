@@ -3,7 +3,7 @@
 
 This documentation contains the steps that were followed to install and setup the backend. 
 
-## Django ORM Framework Setup  
+## Setting up the Django ORM Framework  
 
 To install django, I followed these steps using this tutorial [(How to install Django)](https://docs.djangoproject.com/en/2.2/topics/install)
 
@@ -157,4 +157,18 @@ You should see this:
 
 Reference: https://www.django-rest-framework.org/tutorial/quickstart/
 
+### Creating Sys. Admin Page
 
+Create system administrator account:
+
+        python manage.py createsuperuser --email dmap@mars.cs.qc.cuny.edu --username dmap
+        
+The account will be created after entering a password.
+
+Now, admin page can be accessed at:
+
+        hostname:port/admin
+        
+        #for local development
+        127.0.0.1:8000/admin
+       
