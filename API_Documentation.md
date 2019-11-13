@@ -31,7 +31,7 @@ where "institutecode" can be obtained from "/api/campuses"
 
 * **[Response for example request "/api/majors/QNS01"](response/majors.json)**
 
-## Error Response
+### Error Response
 
 **Condition** : If provided `institutecode` parameter is not correct.
 
