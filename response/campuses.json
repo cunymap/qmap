@@ -1,0 +1,127 @@
+[
+    {
+        "id": 1,
+        "code": "BAR01",
+        "descr": "Baruch College"
+    },
+    {
+        "id": 2,
+        "code": "BMC01",
+        "descr": "Borough of Manhattan CC"
+    },
+    {
+        "id": 3,
+        "code": "BCC01",
+        "descr": "Bronx CC"
+    },
+    {
+        "id": 4,
+        "code": "BKL01",
+        "descr": "Brooklyn College"
+    },
+    {
+        "id": 5,
+        "code": "CTY01",
+        "descr": "City College"
+    },
+    {
+        "id": 6,
+        "code": "CSI01",
+        "descr": "College of Staten Island"
+    },
+    {
+        "id": 7,
+        "code": "GRD01",
+        "descr": "Graduate Center"
+    },
+    {
+        "id": 8,
+        "code": "NCC01",
+        "descr": "Guttman CC"
+    },
+    {
+        "id": 9,
+        "code": "HOS01",
+        "descr": "Hostos CC"
+    },
+    {
+        "id": 10,
+        "code": "HTR01",
+        "descr": "Hunter College"
+    },
+    {
+        "id": 11,
+        "code": "JJC01",
+        "descr": "John Jay College"
+    },
+    {
+        "id": 12,
+        "code": "KCC01",
+        "descr": "Kingsborough CC"
+    },
+    {
+        "id": 13,
+        "code": "LAG01",
+        "descr": "LaGuardia CC"
+    },
+    {
+        "id": 14,
+        "code": "LEH01",
+        "descr": "Lehman College"
+    },
+    {
+        "id": 15,
+        "code": "MEC01",
+        "descr": "Medgar Evers College"
+    },
+    {
+        "id": 16,
+        "code": "NYT01",
+        "descr": "NYC College of Technology"
+    },
+    {
+        "id": 17,
+        "code": "QNS01",
+        "descr": "Queens College"
+    },
+    {
+        "id": 18,
+        "code": "QCC01",
+        "descr": "Queensborough CC"
+    },
+    {
+        "id": 19,
+        "code": "SOJ01",
+        "descr": "School of Journalism"
+    },
+    {
+        "id": 20,
+        "code": "SLU01",
+        "descr": "School of Labor&Urban Studies"
+    },
+    {
+        "id": 21,
+        "code": "LAW01",
+        "descr": "School of Law"
+    },
+    {
+        "id": 22,
+        "code": "MED01",
+        "descr": "School of Medicine"
+    },
+    {
+        "id": 23,
+        "code": "SPS01",
+        "descr": "School of Professional Studies"
+    },
+    {
+        "id": 24,
+        "code": "SPH01",
+        "descr": "School of Public Health"
+    },
+    {
+        "id": 25,
+        "code": "YRK01",
+        "descr": "York College"
+    }
+]
