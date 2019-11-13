@@ -20,11 +20,11 @@ from . import views
 
 
 router = routers.DefaultRouter()
-#router.register(r'maps', views.MapsViewSet)
-router.register(r'campuses', views.CampusView)
-
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
+    path('api/campuses/', views.Campuses.as_view()),
+    path('api/majors/<str:code>/', views.Majors.as_view())
+
 ]
