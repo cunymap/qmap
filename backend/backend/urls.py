@@ -16,15 +16,32 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
+from rest_framework.response import Response
+from rest_framework.views import APIView
 from . import views
+
+
+class DocsView(APIView):
+    """
+    RESTFul Documentation of my app
+    source: https://stackoverflow.com/questions/37066146/defaultrouter-class-not-creating-api-root-view-for-all-apps-in-python
+    """
+    def get(self, request, *args, **kwargs):
+        apidocs = {
+                   'SysAdminPage': request.build_absolute_uri('admin'),
+                   'Campuses': request.build_absolute_uri('api/campuses/'),
+                   'Majors': request.build_absolute_uri('api/majors/qns01/'),
+                   }
+        return Response(apidocs)
 
 
 router = routers.DefaultRouter()
 
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', DocsView.as_view()),
     path('', include(router.urls)),
+    path('admin/', admin.site.urls),
     path('api/campuses/', views.Campuses.as_view()),
     path('api/majors/<str:code>/', views.Majors.as_view())
-
-]
+    ]
