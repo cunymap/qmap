@@ -172,3 +172,6 @@ Now, admin page can be accessed at:
         #for local development
         127.0.0.1:8000/admin
        
+### Class based view API
+
+Our API views are created based on this method: [reference](https://www.django-rest-framework.org/tutorial/3-class-based-views/)
