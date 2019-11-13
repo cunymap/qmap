@@ -30,3 +30,11 @@ where "institutecode" can be obtained from "/api/campuses"
 * **Code** : `200 OK`
 
 * **[Response for example request "/api/majors/QNS01"](response/majors.json)**
+
+## Error Response
+
+**Condition** : If provided `institutecode` parameter is not correct.
+
+**Code** : `404 NOT FOUND`
+
+**Content** : `{}`
