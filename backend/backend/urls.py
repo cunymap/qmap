@@ -1,4 +1,4 @@
-"""backend URL Configuration
+"""myproject URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -14,8 +14,40 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from rest_framework import routers
+from rest_framework.response import Response
+from rest_framework.views import APIView
+from . import views
+
+
+class DocsView(APIView):
+    """
+    RESTFul Documentation of my app
+    source: https://stackoverflow.com/questions/37066146/defaultrouter-class-not-creating-api-root-view-for-all-apps-in-python
+    """
+    def get(self, request, *args, **kwargs):
+        apidocs = {
+                   'SysAdminPage': request.build_absolute_uri('admin'),
+                   'Campuses': request.build_absolute_uri('api/campuses/'),
+                   'Majors': request.build_absolute_uri('api/majors/qns01/'),
+                   }
+        return Response(apidocs)
+
+
+router = routers.DefaultRouter()
+<<<<<<< HEAD
+#router.register(r'maps', views.MapsViewSet)
+router.register(r'campuses', views.CampusView)
+router.register(r'degrees', views.camDegreeView)
+=======
+>>>>>>> b923e761c216aa4ab8d396cd04dc46fa9576613d
+
 
 urlpatterns = [
+    path('', DocsView.as_view()),
+    path('', include(router.urls)),
     path('admin/', admin.site.urls),
-]
+    path('api/campuses/', views.Campuses.as_view()),
+    path('api/majors/<str:code>/', views.Majors.as_view())
+    ]
