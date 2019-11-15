@@ -1,6 +1,6 @@
-from .models import MapsCrseCatalog, MapsInstitutions
+from .models import MapsCrseCatalog, MapsInstitutions, AcadPlanTblLtd
 from rest_framework import viewsets
-from .serializers import CampusSerializer
+from .serializers import CampusSerializer, CampDegreeSerializer
 
 """
 Create new view sets as classes in this file
@@ -15,7 +15,15 @@ Create new view sets as classes in this file
 
 class CampusView(viewsets.ModelViewSet):
     """
-    API endpoint the outputs the name of all the campuses.
+    API endpoint that outputs the name of all the campuses.
     """
     queryset = MapsInstitutions.objects.all()
     serializer_class = CampusSerializer
+
+class camDegreeView(viewsets.ModelViewSet):
+    """
+    API endpoint that outputs the degrees offered in the campus selected.
+    """
+    camp = 'BAR01'
+    queryset = AcadPlanTblLtd.objects.filter(institutecode =camp)
+    serializer_class = CampDegreeSerializer
