@@ -29,7 +29,7 @@ where "institutecode" can be obtained from "/api/campuses"
 
 * **Code** : `200 OK`
 
-* **[Response for example request "/api/majors/QNS01"](response/degrees.json)**
+* **[Response for example request "/api/degrees/QNS01"](response/degrees.json)**
 
 ### Error Response
 
