@@ -1,0 +1,1208 @@
+[
+    {
+        "acad_plan": "ACCT-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Accounting\r"
+    },
+    {
+        "acad_plan": "ACE712-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Adolescent Chinese Education Grades 7-12\r"
+    },
+    {
+        "acad_plan": "ACTST-BBA",
+        "degree": "BBA",
+        "degree_descr": "Bachelor of Business Admin",
+        "degree_long_descr": "Actuarial Studies\r"
+    },
+    {
+        "acad_plan": "AFST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Africana Studies\r"
+    },
+    {
+        "acad_plan": "AFST712-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Africana Studies: Social Studies 7-12\r"
+    },
+    {
+        "acad_plan": "AMST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "American Studies\r"
+    },
+    {
+        "acad_plan": "ANGRK-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Ancient Greek\r"
+    },
+    {
+        "acad_plan": "ANTH-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Anthropology\r"
+    },
+    {
+        "acad_plan": "ANTH712-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Anthropology: Social Studies 7-12\r"
+    },
+    {
+        "acad_plan": "ARTD-BFA",
+        "degree": "BFA",
+        "degree_descr": "Bachelor of Fine Arts",
+        "degree_long_descr": "Design\r"
+    },
+    {
+        "acad_plan": "ARTD-BS",
+        "degree": "BS",
+        "degree_descr": "Bachelor of Science",
+        "degree_long_descr": "Design\r"
+    },
+    {
+        "acad_plan": "ARTED-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Art Education\r"
+    },
+    {
+        "acad_plan": "ARTH-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Art History\r"
+    },
+    {
+        "acad_plan": "ARTS-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Studio Art\r"
+    },
+    {
+        "acad_plan": "ARTS-BFA",
+        "degree": "BFA",
+        "degree_descr": "Bachelor of Fine Arts",
+        "degree_long_descr": "Studio Art\r"
+    },
+    {
+        "acad_plan": "AUDIO-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Audiology\r"
+    },
+    {
+        "acad_plan": "BASS-BS",
+        "degree": "BS",
+        "degree_descr": "Bachelor of Science",
+        "degree_long_descr": "Applied Social Sciences\r"
+    },
+    {
+        "acad_plan": "BIOL-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Biology\r"
+    },
+    {
+        "acad_plan": "BIOL-BAMA",
+        "degree": "BAMA",
+        "degree_descr": "Bach/Mast of Arts",
+        "degree_long_descr": "Biology\r"
+    },
+    {
+        "acad_plan": "BIOL712-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Biology 7-12\r"
+    },
+    {
+        "acad_plan": "BIOLED-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Biology Education\r"
+    },
+    {
+        "acad_plan": "CBUIS-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "CUNY Baccalaureate for Unique and Interdisciplinary Studies\r"
+    },
+    {
+        "acad_plan": "CBUIS-BS",
+        "degree": "BS",
+        "degree_descr": "Bachelor of Science",
+        "degree_long_descr": "CUNY Baccalaureate for Unique and Interdisciplinary Studies\r"
+    },
+    {
+        "acad_plan": "CHEM-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Chemistry\r"
+    },
+    {
+        "acad_plan": "CHEM-BAMA",
+        "degree": "BAMA",
+        "degree_descr": "Bach/Mast of Arts",
+        "degree_long_descr": "Chemistry\r"
+    },
+    {
+        "acad_plan": "CHEM712-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Chemistry 7-12\r"
+    },
+    {
+        "acad_plan": "CHIN-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Chinese\r"
+    },
+    {
+        "acad_plan": "CLAS-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Classics\r"
+    },
+    {
+        "acad_plan": "CMLIT-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Comparative Literature\r"
+    },
+    {
+        "acad_plan": "CMSCI-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Communication Science and Disorders\r"
+    },
+    {
+        "acad_plan": "CSCI-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Computer Science\r"
+    },
+    {
+        "acad_plan": "CSCI-BAMA",
+        "degree": "BAMA",
+        "degree_descr": "Bach/Mast of Arts",
+        "degree_long_descr": "Computer Science\r"
+    },
+    {
+        "acad_plan": "CSCI-BS",
+        "degree": "BS",
+        "degree_descr": "Bachelor of Science",
+        "degree_long_descr": "Computer Science\r"
+    },
+    {
+        "acad_plan": "DANCE-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Theater and Dance\r"
+    },
+    {
+        "acad_plan": "DRAM-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Drama and Theater\r"
+    },
+    {
+        "acad_plan": "EAST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "East Asian Studies\r"
+    },
+    {
+        "acad_plan": "ECON-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Economics\r"
+    },
+    {
+        "acad_plan": "ECON-BS",
+        "degree": "BS",
+        "degree_descr": "Bachelor of Science",
+        "degree_long_descr": "Quantitative Economics\r"
+    },
+    {
+        "acad_plan": "ECON712-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Economics: Social Studies 7-12\r"
+    },
+    {
+        "acad_plan": "EECE-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Elementary and Early Childhood Education\r"
+    },
+    {
+        "acad_plan": "ENG712-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "English 7-12\r"
+    },
+    {
+        "acad_plan": "ENGL-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "English\r"
+    },
+    {
+        "acad_plan": "ENSCI-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Environmental Sciences\r"
+    },
+    {
+        "acad_plan": "ENSCI-BS",
+        "degree": "BS",
+        "degree_descr": "Bachelor of Science",
+        "degree_long_descr": "Environmental Sciences\r"
+    },
+    {
+        "acad_plan": "ENSTD-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Environmental Studies\r"
+    },
+    {
+        "acad_plan": "ESCIED-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Earth Science Teacher\r"
+    },
+    {
+        "acad_plan": "FINAN-BBA",
+        "degree": "BBA",
+        "degree_descr": "Bachelor of Business Admin",
+        "degree_long_descr": "Finance\r"
+    },
+    {
+        "acad_plan": "FLMST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Film Studies\r"
+    },
+    {
+        "acad_plan": "FNES-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Family and Consumer Sciences\r"
+    },
+    {
+        "acad_plan": "FNESED-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Family and Consumer Sciences Teacher\r"
+    },
+    {
+        "acad_plan": "FREN-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "French\r"
+    },
+    {
+        "acad_plan": "FREN712-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "French 7-12\r"
+    },
+    {
+        "acad_plan": "GEOL-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Geology\r"
+    },
+    {
+        "acad_plan": "GEOL-BS",
+        "degree": "BS",
+        "degree_descr": "Bachelor of Science",
+        "degree_long_descr": "Geology\r"
+    },
+    {
+        "acad_plan": "GEOL712-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Geology: Earth Sciences 7-12\r"
+    },
+    {
+        "acad_plan": "GERM-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "German\r"
+    },
+    {
+        "acad_plan": "GERM712-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "German 7-12\r"
+    },
+    {
+        "acad_plan": "GRKST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Byzantine and Modern Greek Studies\r"
+    },
+    {
+        "acad_plan": "HEBRW-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Hebrew\r"
+    },
+    {
+        "acad_plan": "HIST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "History\r"
+    },
+    {
+        "acad_plan": "HIST-BAMA",
+        "degree": "BAMA",
+        "degree_descr": "Bach/Mast of Arts",
+        "degree_long_descr": "History\r"
+    },
+    {
+        "acad_plan": "HIST712-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "History: Social Studies 7-12\r"
+    },
+    {
+        "acad_plan": "INDSP-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Interdisciplinary Studies\r"
+    },
+    {
+        "acad_plan": "INTLB-BBA",
+        "degree": "BBA",
+        "degree_descr": "Bachelor of Business Admin",
+        "degree_long_descr": "International Business\r"
+    },
+    {
+        "acad_plan": "ITAL-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Italian\r"
+    },
+    {
+        "acad_plan": "ITAL712-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Italian 7-12\r"
+    },
+    {
+        "acad_plan": "JEWST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Jewish Studies\r"
+    },
+    {
+        "acad_plan": "LAAST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Latin American Area Studies\r"
+    },
+    {
+        "acad_plan": "LABST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Labor Studies\r"
+    },
+    {
+        "acad_plan": "LAST712-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Latin American Area Studies: Social Studies 7-12\r"
+    },
+    {
+        "acad_plan": "LATIN-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Latin\r"
+    },
+    {
+        "acad_plan": "LATN712-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Latin 7-12\r"
+    },
+    {
+        "acad_plan": "LING-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Linguistics: General\r"
+    },
+    {
+        "acad_plan": "MATH-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Mathematics\r"
+    },
+    {
+        "acad_plan": "MATH712-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Mathematics 7-12\r"
+    },
+    {
+        "acad_plan": "MEDST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Media Studies\r"
+    },
+    {
+        "acad_plan": "MHCACCT-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Accounting\r"
+    },
+    {
+        "acad_plan": "MHCACT-BBA",
+        "degree": "BBA",
+        "degree_descr": "Bachelor of Business Admin",
+        "degree_long_descr": "Macaulay Honors College Actuarial Studies\r"
+    },
+    {
+        "acad_plan": "MHCAFS7-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Africana Studies 7-12\r"
+    },
+    {
+        "acad_plan": "MHCAFST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Africana Studies\r"
+    },
+    {
+        "acad_plan": "MHCAMST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College American Studies\r"
+    },
+    {
+        "acad_plan": "MHCANT7-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Anthropology 7-12\r"
+    },
+    {
+        "acad_plan": "MHCANTH-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Anthropology\r"
+    },
+    {
+        "acad_plan": "MHCARD-BFA",
+        "degree": "BFA",
+        "degree_descr": "Bachelor of Fine Arts",
+        "degree_long_descr": "Macaulay Honors College Design\r"
+    },
+    {
+        "acad_plan": "MHCART-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Studio Art\r"
+    },
+    {
+        "acad_plan": "MHCART-BFA",
+        "degree": "BFA",
+        "degree_descr": "Bachelor of Fine Arts",
+        "degree_long_descr": "Macaulay Honors College Studio Art\r"
+    },
+    {
+        "acad_plan": "MHCARTD-BS",
+        "degree": "BS",
+        "degree_descr": "Bachelor of Science",
+        "degree_long_descr": "Macaulay Honors College Design\r"
+    },
+    {
+        "acad_plan": "MHCARTE-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Art Education\r"
+    },
+    {
+        "acad_plan": "MHCARTH-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Art History\r"
+    },
+    {
+        "acad_plan": "MHCBASS-BS",
+        "degree": "BS",
+        "degree_descr": "Bachelor of Science",
+        "degree_long_descr": "Macaulay Honors College Applied Social Sciences\r"
+    },
+    {
+        "acad_plan": "MHCBIO7-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Biology 7-12\r"
+    },
+    {
+        "acad_plan": "MHCBIOL-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Biology\r"
+    },
+    {
+        "acad_plan": "MHCCHE7-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Chemistry 7-12\r"
+    },
+    {
+        "acad_plan": "MHCCHEM-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Chemistry\r"
+    },
+    {
+        "acad_plan": "MHCCHI7-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Adolescent Chinese Education Grades 7-12\r"
+    },
+    {
+        "acad_plan": "MHCCHIN-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Chinese\r"
+    },
+    {
+        "acad_plan": "MHCCLAS-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Classics\r"
+    },
+    {
+        "acad_plan": "MHCCLIT-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Comparative Literature\r"
+    },
+    {
+        "acad_plan": "MHCCMSC-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Communication and Science Disorders\r"
+    },
+    {
+        "acad_plan": "MHCCSCI-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Computer Science\r"
+    },
+    {
+        "acad_plan": "MHCCSCI-BS",
+        "degree": "BS",
+        "degree_descr": "Bachelor of Science",
+        "degree_long_descr": "Macaulay Honors College Computer Science\r"
+    },
+    {
+        "acad_plan": "MHCDAN-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Theater and Dance\r"
+    },
+    {
+        "acad_plan": "MHCDRAM-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Drama and Theater\r"
+    },
+    {
+        "acad_plan": "MHCEAST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College East Asian Studies\r"
+    },
+    {
+        "acad_plan": "MHCECO7-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Economics: Social Studies 7-12\r"
+    },
+    {
+        "acad_plan": "MHCECON-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Economics\r"
+    },
+    {
+        "acad_plan": "MHCEECE-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Elementary and Early Childhood Education\r"
+    },
+    {
+        "acad_plan": "MHCENG7-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College English 7-12\r"
+    },
+    {
+        "acad_plan": "MHCENGL-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College English\r"
+    },
+    {
+        "acad_plan": "MHCENS-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Environmental Sciences\r"
+    },
+    {
+        "acad_plan": "MHCENS-BS",
+        "degree": "BS",
+        "degree_descr": "Bachelor of Science",
+        "degree_long_descr": "Macaulay Honors College Environmental Sciences\r"
+    },
+    {
+        "acad_plan": "MHCENST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Environmental Studies\r"
+    },
+    {
+        "acad_plan": "MHCFIN-BBA",
+        "degree": "BBA",
+        "degree_descr": "Bachelor of Business Admin",
+        "degree_long_descr": "Macaulay Honors College Finance\r"
+    },
+    {
+        "acad_plan": "MHCFMST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Film Studies\r"
+    },
+    {
+        "acad_plan": "MHCFNED-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Family and Consumer Sciences Teacher\r"
+    },
+    {
+        "acad_plan": "MHCFNES-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Family and Consumer Sciences\r"
+    },
+    {
+        "acad_plan": "MHCFRE7-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College French 7-12\r"
+    },
+    {
+        "acad_plan": "MHCFREN-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College French\r"
+    },
+    {
+        "acad_plan": "MHCGEOL-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Geology\r"
+    },
+    {
+        "acad_plan": "MHCGEOL-BS",
+        "degree": "BS",
+        "degree_descr": "Bachelor of Science",
+        "degree_long_descr": "Macaulay Honors College Geology\r"
+    },
+    {
+        "acad_plan": "MHCGER7-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College German 7-12\r"
+    },
+    {
+        "acad_plan": "MHCGERM-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College German\r"
+    },
+    {
+        "acad_plan": "MHCGKST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Byzantine and Modern Greek Studies\r"
+    },
+    {
+        "acad_plan": "MHCHEBW-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Hebrew\r"
+    },
+    {
+        "acad_plan": "MHCHIS7-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College History: Social Studies 7-12\r"
+    },
+    {
+        "acad_plan": "MHCHIST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College History\r"
+    },
+    {
+        "acad_plan": "MHCINB-BBA",
+        "degree": "BBA",
+        "degree_descr": "Bachelor of Business Admin",
+        "degree_long_descr": "Macaulay Honors College International Business\r"
+    },
+    {
+        "acad_plan": "MHCINDS-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Interdisciplinary Studies\r"
+    },
+    {
+        "acad_plan": "MHCITA7-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Italian 7-12\r"
+    },
+    {
+        "acad_plan": "MHCITAL-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Italian\r"
+    },
+    {
+        "acad_plan": "MHCJWST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Jewish Studies\r"
+    },
+    {
+        "acad_plan": "MHCLAA7-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Latin American Area Studies: Social Studies 7-12\r"
+    },
+    {
+        "acad_plan": "MHCLAAS-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Latin American Area Studies\r"
+    },
+    {
+        "acad_plan": "MHCLAT7-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Latin 7-12\r"
+    },
+    {
+        "acad_plan": "MHCLATN-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Latin\r"
+    },
+    {
+        "acad_plan": "MHCLBST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Labor Studies\r"
+    },
+    {
+        "acad_plan": "MHCLING-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Linguistics: General\r"
+    },
+    {
+        "acad_plan": "MHCMAT7-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Mathematics 7-12\r"
+    },
+    {
+        "acad_plan": "MHCMATH-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Mathematics\r"
+    },
+    {
+        "acad_plan": "MHCMDST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Media Studies\r"
+    },
+    {
+        "acad_plan": "MHCMEST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Middle Eastern Studies\r"
+    },
+    {
+        "acad_plan": "MHCMUED-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Music Education\r"
+    },
+    {
+        "acad_plan": "MHCMUS-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Music\r"
+    },
+    {
+        "acad_plan": "MHCNSCB-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Biology and Neuroscience\r"
+    },
+    {
+        "acad_plan": "MHCNSCP-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Psychology and Neuroscience\r"
+    },
+    {
+        "acad_plan": "MHCNUDT-BS",
+        "degree": "BS",
+        "degree_descr": "Bachelor of Science",
+        "degree_long_descr": "Macaulay Honors College Family and Consumer Sciences\r"
+    },
+    {
+        "acad_plan": "MHCNXSC-BS",
+        "degree": "BS",
+        "degree_descr": "Bachelor of Science",
+        "degree_long_descr": "Macaulay Honors College Nutrition and Exercise Sciences\r"
+    },
+    {
+        "acad_plan": "MHCPHED-BS",
+        "degree": "BS",
+        "degree_descr": "Bachelor of Science",
+        "degree_long_descr": "Macaulay Honors College Physical Education\r"
+    },
+    {
+        "acad_plan": "MHCPHIL-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Philosophy\r"
+    },
+    {
+        "acad_plan": "MHCPHY7-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Physics 7-12\r"
+    },
+    {
+        "acad_plan": "MHCPHYS-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Physics\r"
+    },
+    {
+        "acad_plan": "MHCPHYS-BS",
+        "degree": "BS",
+        "degree_descr": "Bachelor of Science",
+        "degree_long_descr": "Macaulay Honors College Physics\r"
+    },
+    {
+        "acad_plan": "MHCPORT-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Portuguese\r"
+    },
+    {
+        "acad_plan": "MHCPSC7-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Political Science: Social Studies 7-12\r"
+    },
+    {
+        "acad_plan": "MHCPSCI-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Political Science\r"
+    },
+    {
+        "acad_plan": "MHCPSED-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Political Science and Education\r"
+    },
+    {
+        "acad_plan": "MHCPSY-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Psychology\r"
+    },
+    {
+        "acad_plan": "MHCRLST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Religious Studies\r"
+    },
+    {
+        "acad_plan": "MHCRUSS-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Russian\r"
+    },
+    {
+        "acad_plan": "MHCSOC-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Sociology\r"
+    },
+    {
+        "acad_plan": "MHCSOC7-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Sociology: Social Studies 7-12\r"
+    },
+    {
+        "acad_plan": "MHCSPA7-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Spanish 7-12\r"
+    },
+    {
+        "acad_plan": "MHCSPAN-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Spanish\r"
+    },
+    {
+        "acad_plan": "MHCTESL-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Linguistics: TESOL\r"
+    },
+    {
+        "acad_plan": "MHCUBST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Urban Studies\r"
+    },
+    {
+        "acad_plan": "MHCURB7-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Urban Studies 7-12\r"
+    },
+    {
+        "acad_plan": "MHCWMST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Macaulay Honors College Women's Studies\r"
+    },
+    {
+        "acad_plan": "MIDES-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Middle Eastern Studies\r"
+    },
+    {
+        "acad_plan": "MUSIC-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Music\r"
+    },
+    {
+        "acad_plan": "MUSIC-BAMA",
+        "degree": "BAMA",
+        "degree_descr": "Bach/Mast of Arts",
+        "degree_long_descr": "Music\r"
+    },
+    {
+        "acad_plan": "MUSIC-BMUS",
+        "degree": "BMUS",
+        "degree_descr": "Bachelor of Music",
+        "degree_long_descr": "Music Performance\r"
+    },
+    {
+        "acad_plan": "MUSICED-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Music Education\r"
+    },
+    {
+        "acad_plan": "NEXSCI-BS",
+        "degree": "BS",
+        "degree_descr": "Bachelor of Science",
+        "degree_long_descr": "Nutrition and Exercise Sciences\r"
+    },
+    {
+        "acad_plan": "NRSCIB-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Biology and Neuroscience\r"
+    },
+    {
+        "acad_plan": "NRSCIP-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Psychology and Neuroscience\r"
+    },
+    {
+        "acad_plan": "NUTDTS-BS",
+        "degree": "BS",
+        "degree_descr": "Bachelor of Science",
+        "degree_long_descr": "Nutrition and Dietetics\r"
+    },
+    {
+        "acad_plan": "PHIL-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Philosophy\r"
+    },
+    {
+        "acad_plan": "PHIL-BAMA",
+        "degree": "BAMA",
+        "degree_descr": "Bach/Mast of Arts",
+        "degree_long_descr": "Philosophy\r"
+    },
+    {
+        "acad_plan": "PHOTO-BFA",
+        "degree": "BFA",
+        "degree_descr": "Bachelor of Fine Arts",
+        "degree_long_descr": "Photography and Imaging\r"
+    },
+    {
+        "acad_plan": "PHYPH-BSMS",
+        "degree": "BSMS",
+        "degree_descr": "Bach/Mast of Science",
+        "degree_long_descr": "Physics Photonics\r"
+    },
+    {
+        "acad_plan": "PHYS-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Physics\r"
+    },
+    {
+        "acad_plan": "PHYS-BAMA",
+        "degree": "BAMA",
+        "degree_descr": "Bach/Mast of Arts",
+        "degree_long_descr": "Physics\r"
+    },
+    {
+        "acad_plan": "PHYS-BS",
+        "degree": "BS",
+        "degree_descr": "Bachelor of Science",
+        "degree_long_descr": "Physics\r"
+    },
+    {
+        "acad_plan": "PHYS712-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Physics 7-12\r"
+    },
+    {
+        "acad_plan": "PHYSED-BS",
+        "degree": "BS",
+        "degree_descr": "Bachelor of Science",
+        "degree_long_descr": "Physical Education\r"
+    },
+    {
+        "acad_plan": "PSCI-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Political Science\r"
+    },
+    {
+        "acad_plan": "PSCI712-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Political Science and Government: Social Studies 7-12\r"
+    },
+    {
+        "acad_plan": "PSYCH-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Psychology\r"
+    },
+    {
+        "acad_plan": "RLGST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Religious Studies\r"
+    },
+    {
+        "acad_plan": "RUSS-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Russian\r"
+    },
+    {
+        "acad_plan": "SOC-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Sociology\r"
+    },
+    {
+        "acad_plan": "SOC712-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Sociology: Social Studies 7-12\r"
+    },
+    {
+        "acad_plan": "SPAN-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Spanish\r"
+    },
+    {
+        "acad_plan": "SPAN712-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Spanish 7-12\r"
+    },
+    {
+        "acad_plan": "TESOL-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Linguistics: TESOL\r"
+    },
+    {
+        "acad_plan": "UBST712-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Urban Studies: Social Studies 7-12\r"
+    },
+    {
+        "acad_plan": "UNDECL",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Undeclared\r"
+    },
+    {
+        "acad_plan": "UNDECL-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Undeclared\r"
+    },
+    {
+        "acad_plan": "URBST-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Urban Studies\r"
+    },
+    {
+        "acad_plan": "URBST-BAMA",
+        "degree": "BAMA",
+        "degree_descr": "Bach/Mast of Arts",
+        "degree_long_descr": "Urban Studies\r"
+    },
+    {
+        "acad_plan": "WGS-BA",
+        "degree": "BA",
+        "degree_descr": "Bachelor of Arts",
+        "degree_long_descr": "Women and Gender Studies\r"
+    }
+]
