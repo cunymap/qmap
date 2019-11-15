@@ -23,14 +23,14 @@ from . import views
 
 class DocsView(APIView):
     """
-    RESTFul Documentation of my app
-    source: https://stackoverflow.com/questions/37066146/defaultrouter-class-not-creating-api-root-view-for-all-apps-in-python
+    Browsable REST API for DegreeMaps
     """
+    #source: https://stackoverflow.com/questions/37066146/defaultrouter-class-not-creating-api-root-view-for-all-apps-in-python
     def get(self, request, *args, **kwargs):
         apidocs = {
                    'SysAdminPage': request.build_absolute_uri('admin'),
                    'Campuses': request.build_absolute_uri('api/campuses/'),
-                   'Majors': request.build_absolute_uri('api/majors/qns01/'),
+                   'Degrees': request.build_absolute_uri('api/degrees/qns01/'),
                    }
         return Response(apidocs)
 
@@ -43,5 +43,5 @@ urlpatterns = [
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
     path('api/campuses/', views.Campuses.as_view()),
-    path('api/majors/<str:code>/', views.Majors.as_view())
+    path('api/degrees/<str:code>/', views.Degrees.as_view())
     ]

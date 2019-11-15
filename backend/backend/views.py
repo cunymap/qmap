@@ -1,5 +1,5 @@
 from .models import MapsCrseCatalog, MapsInstitutions, AcadPlanTblLtd
-from .serializers import CampusSerializer, MajorsSerializer
+from .serializers import CampusSerializer, DegreesSerializer
 
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -21,15 +21,15 @@ class Campuses(APIView):
         serializer = CampusSerializer(campuses, many=True)
         return Response(serializer.data)
 
-class Majors(APIView):
+class Degrees(APIView):
     """
-    API endpoint that outputs the name of all the majors for a particular campus.
+    API endpoint that outputs the name of all the degrees for a particular campus.
     """
     def get(self, request, code, format=None):
-        majors = AcadPlanTblLtd.objects.filter(institutecode=code)
-        serializer = MajorsSerializer(majors, many=True)
+        degrees = AcadPlanTblLtd.objects.filter(institutecode=code)
+        serializer = DegreesSerializer(degrees, many=True)
 
-        if majors.exists():
+        if degrees.exists():
             return Response(serializer.data)
         else:
             return Response({}, status=status.HTTP_404_NOT_FOUND)
