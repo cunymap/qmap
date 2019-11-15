@@ -17,10 +17,10 @@ Get a list of campuses in CUNY.
   
 * **[Sample Response](response/campuses.json)**
 
-## List Majors
-Get a list of majors offered at particular campus.
+## List Degrees
+Get a list of degrees offered at particular campus.
 
-**URL** : `/api/majors/{institutecode}`
+**URL** : `/api/degrees/{institutecode}`
 where "institutecode" can be obtained from "/api/campuses"
 
 **Method** : `GET`
@@ -29,7 +29,7 @@ where "institutecode" can be obtained from "/api/campuses"
 
 * **Code** : `200 OK`
 
-* **[Response for example request "/api/majors/QNS01"](response/majors.json)**
+* **[Response for example request "/api/majors/QNS01"](response/degrees.json)**
 
 ### Error Response
 
