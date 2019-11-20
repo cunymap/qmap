@@ -62,7 +62,7 @@ Search a course by course ID
 **Content** : `{}`
 
 
-## TO BE IMPLEMENTED IN NEXT MILESTONE
+## TO BE IMPLEMENTED BY NEXT MILESTONE
 
 - authentication on the backend
 
