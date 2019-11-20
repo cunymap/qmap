@@ -68,8 +68,13 @@ Search a course by course ID
 
 ### Endpoints:
 GET /api/course/search/?desc='internet':  Search course by description
+
 GET /api/course/search/?name='cs355':     Search course by name
+
 GET /api/map/{map_id}:  Get a map by ID
+
 GET /api/map/q?campus='qns01'&degree='ACCT-BA' : Search maps available for a campus and major
+
 PUT /api/map/{map_id}:  Make changes to a map
+
 DELETE /api/map/{map_id}:  Delete a map
