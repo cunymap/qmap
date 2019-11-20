@@ -36,7 +36,7 @@ class MapsAcadPlan(models.Model):
 
 
 class MapsCrseCatalog(models.Model):
-    course_id = models.CharField(primary_key=True, max_length=6)
+    course_id = models.CharField(primary_key=True, max_length=7)
     eff_date = models.DateField()
     institute = models.ForeignKey('MapsInstitutions', models.DO_NOTHING, blank=True, null=True)
     status = models.CharField(max_length=1, blank=True, null=True)
@@ -53,28 +53,28 @@ class MapsCrseCatalog(models.Model):
         unique_together = (('course_id', 'eff_date'),)
 
 
-# class MapsDmapsLists(models.Model):
-#     map = models.ForeignKey('MapsDmapsMeta', models.DO_NOTHING, primary_key=True)
-#     semester_num = models.IntegerField()
-#     course1 = models.ForeignKey(MapsCrseCatalog, models.DO_NOTHING, db_column='course1', blank=True, null=True)
-#     course2 = models.ForeignKey(MapsCrseCatalog, models.DO_NOTHING, db_column='course2', blank=True, null=True)
-#     course3 = models.ForeignKey(MapsCrseCatalog, models.DO_NOTHING, db_column='course3', blank=True, null=True)
-#     course4 = models.ForeignKey(MapsCrseCatalog, models.DO_NOTHING, db_column='course4', blank=True, null=True)
-#     course5 = models.ForeignKey(MapsCrseCatalog, models.DO_NOTHING, db_column='course5', blank=True, null=True)
-#     course6 = models.ForeignKey(MapsCrseCatalog, models.DO_NOTHING, db_column='course6', blank=True, null=True)
-#     course7 = models.ForeignKey(MapsCrseCatalog, models.DO_NOTHING, db_column='course7', blank=True, null=True)
+class MapsDmapsLists(models.Model):
+    map = models.ForeignKey('MapsDmapsMeta', models.DO_NOTHING, primary_key=True)
+    semester_num = models.IntegerField()
+    course1 = models.ForeignKey(MapsCrseCatalog,  models.DO_NOTHING, related_name='course1', db_column='course1', blank=True, null=True)
+    course2 = models.ForeignKey(MapsCrseCatalog,  models.DO_NOTHING, related_name='course2', db_column='course2', blank=True, null=True)
+    course3 = models.ForeignKey(MapsCrseCatalog,  models.DO_NOTHING, related_name='course3', db_column='course3', blank=True, null=True)
+    course4 = models.ForeignKey(MapsCrseCatalog,  models.DO_NOTHING, related_name='course4', db_column='course4', blank=True, null=True)
+    course5 = models.ForeignKey(MapsCrseCatalog,  models.DO_NOTHING, related_name='course5', db_column='course5', blank=True, null=True)
+    course6 = models.ForeignKey(MapsCrseCatalog,  models.DO_NOTHING, related_name='course6', db_column='course6', blank=True, null=True)
+    course7 = models.ForeignKey(MapsCrseCatalog,  models.DO_NOTHING, related_name='course7', db_column='course7', blank=True, null=True)
 
-#     class Meta:
-#         managed = False
-#         db_table = 'MAPS_DMAPS_LISTS'
-#         unique_together = (('map', 'semester_num'),)
+    class Meta:
+        managed = False
+        db_table = 'MAPS_DMAPS_LISTS'
+        unique_together = (('map', 'semester_num'),)
 
 
 class MapsDmapsMeta(models.Model):
     map_id = models.AutoField(primary_key=True)
     map_name = models.CharField(max_length=50, blank=True, null=True)
     degree = models.CharField(max_length=20, blank=True, null=True)
-    start_year = models.TextField(blank=True, null=True)  # This field type is a guess.
+    start_year = models.CharField(max_length=7, blank=True, null=True)
     active_status = models.CharField(max_length=1)
     institution = models.ForeignKey('MapsInstitutions', models.DO_NOTHING, blank=True, null=True)
     submit_id = models.CharField(max_length=8, blank=True, null=True)
