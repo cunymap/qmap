@@ -1,0 +1,13 @@
+[
+    {
+        "course_id": "C000737",
+        "eff_date": "2013-05-01",
+        "status": "A",
+        "subject": "CH",
+        "catalog": "252",
+        "descr": "Organic Chemistry II",
+        "min_units": "5",
+        "max_units": "5",
+        "designation": "FSWR"
+    }
+]
