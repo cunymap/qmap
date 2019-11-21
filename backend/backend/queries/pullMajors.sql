@@ -7,9 +7,9 @@
 -- Variables - institute_id - Contains value for the institute to pull majors from.
 ---------------------------------------------------------------------------------------
 
-SET @institute_id = '17';
+SET @institution_id = '17';
 
 SELECT degree_descr
 FROM MAPS_ACAD_PLAN
-WHERE institute_id = @institute_id
+WHERE institution_id = @institution_id
 GROUP BY degree_descr

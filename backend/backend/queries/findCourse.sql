@@ -7,15 +7,15 @@
 --				Then the HAVING clauses searches based on input in both Catalog # and Course Description.
 ---------------------------------------------------------------------------------------
 
-SET @institute_id = '17';
+SET @institution_id = '17';
 SET @major = 'Computer Science';
-SET @search_input = '355';
+SET @search_input = 'Programming';
 
-SELECT A.course_id, A.eff_date, A.institute_id, A.status, A.subject, A.catalog, A.descr, A.min_units, A.max_units, A.designation
+SELECT A.course_id, A.eff_date, A.institution_id, A.status, A.subject, A.catalog, A.descr, A.min_units, A.max_units, A.designation
 		FROM MAPS_CRSE_CATALOG AS A
 			INNER JOIN MAPS_ACAD_PLAN AS B
 				ON A.subject = B.degree
-        WHERE A.institute_id = @institute_id
+        WHERE A.institution_id = @institution_id
 			AND LOCATE(@major, B.degree_descr) > 0
 GROUP BY course_id
 HAVING A.catalog LIKE CONCAT('%',@search_input,'%') OR A.descr LIKE CONCAT('%', @search_input, '%')
