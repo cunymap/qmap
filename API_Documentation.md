@@ -92,8 +92,6 @@ where "institutecode" can be obtained from "/api/campuses"
 
 ## TO BE IMPLEMENTED BY NEXT MILESTONE
 
-- authentication on the backend
-
 ### Endpoints:
 GET /api/course/search/?desc='internet':  Search course by description
 
