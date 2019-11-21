@@ -61,13 +61,13 @@ class Map(APIView):
     """
     Return all maps for a particular institution and major
     """
-    def get(self, request, format=None):
+    def get(self, request, map_id, format=None):
 
         with open(os.path.join('backend', 'queries', 'returnMapsInfo.sql'), 'r') as file:
             queryString = file.read().replace('\n', ' ')
 
         cursor = connection.cursor()
-        cursor.execute("SET @map_id=1;")
+        cursor.execute("SET @map_id=%s;", [map_id])
         cursor.execute(queryString)
         rows = cursor.fetchall()
         result = []

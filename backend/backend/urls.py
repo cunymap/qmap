@@ -32,6 +32,7 @@ class DocsView(APIView):
                    'Campuses': request.build_absolute_uri('api/campuses/'),
                    'Degrees': request.build_absolute_uri('api/degrees/qns01/'),
                    'Course': request.build_absolute_uri('api/course/c000737/'),
+                   'Map': request.build_absolute_uri('api/map/1'),
                    }
         return Response(apidocs)
 
@@ -46,5 +47,5 @@ urlpatterns = [
     path('api/campuses/', views.Campuses.as_view()),
     path('api/degrees/<str:code>/', views.Degrees.as_view()),
     path('api/course/<str:crse_id>/', views.Course.as_view()),
-    path('api/map/', views.Map.as_view())
+    path('api/map/<str:map_id>/', views.Map.as_view())
     ]
