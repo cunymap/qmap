@@ -7,7 +7,7 @@
 
 -- Set @map_id to a specified map value, obtained from user input.
 -- Right now, it's set to 1 just as a random test.
-SET @map_id = 2;
+SET @map_id = 1;
 
 SELECT map_id, semester_num, F.course_id, G.subject, G.catalog, descr, min_units, max_units, designation
 FROM (
