@@ -31,6 +31,8 @@ class DocsView(APIView):
                    'SysAdminPage': request.build_absolute_uri('admin'),
                    'Campuses': request.build_absolute_uri('api/campuses/'),
                    'Degrees': request.build_absolute_uri('api/degrees/qns01/'),
+                   'Course': request.build_absolute_uri('api/course/c000737/'),
+                   'Map': request.build_absolute_uri('api/map/1'),
                    }
         return Response(apidocs)
 
@@ -43,5 +45,7 @@ urlpatterns = [
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
     path('api/campuses/', views.Campuses.as_view()),
-    path('api/degrees/<str:code>/', views.Degrees.as_view())
+    path('api/degrees/<str:code>/', views.Degrees.as_view()),
+    path('api/course/<str:crse_id>/', views.Course.as_view()),
+    path('api/map/<str:map_id>/', views.Map.as_view())
     ]
