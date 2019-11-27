@@ -2,13 +2,12 @@
 
 Backend of CUNY Degree Maps
 
+Link to API: [cs355map.herokuapp.com](https://cs355map.herokuapp.com)
+
 ## Members
 
 - Lomax Richard A  
-- Ahmad Fawad  
-- Arthur Heesun  
 - Htet Joseph Kaung  
-- Lange Bryan Y  
 - Singh Harmandeep  
 - Wu Evan  
 
@@ -16,7 +15,11 @@ Backend of CUNY Degree Maps
 
 - Python 3
 - MySQL
+- Django
+- Heroku
 
 ## Documentation
 
 Backend Documentation: https://github.com/cunymap/qmap-documentation/tree/master/backend
+
+API Documentation: https://github.com/cunymap/qmap/blob/master/API_Documentation.md
