@@ -25,7 +25,7 @@ SECRET_KEY = 'a#52ts&y*dxye9(#!fkmbk$gt=t4v(c7^yt2v-q)^=e#wob6fq'
 DEBUG = True
 
 ## HEROKU 
-ALLOWED_HOSTS = ['cs355map.herokuapp.com','qmap-backend.herokuapp.com']
+ALLOWED_HOSTS = ['cs355map.herokuapp.com','qmap-backend.herokuapp.com', '127.0.0.1']
 
 # Application definition
 
@@ -137,7 +137,7 @@ STATIC_URL = '/static/'
 
 # Extra lookup directories for collectstatic to find static files
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    # os.path.join(BASE_DIR, 'static'),
 )
 
 #  Add configuration for static files storage using whitenoise
