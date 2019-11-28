@@ -6,15 +6,15 @@ Link to API: https://cs355map.herokuapp.com
 
 ## Endpoints
 
-/api/campuses
+[/api/campuses](#campuses)
 
-/api/degrees
+[/api/degrees](#degrees)
 
-/api/course
+[/api/course](#course)
 
-/api/map
+[/api/map](#map)
 
-## List Campuses
+## <a name="campuses"></a> List Campuses
 Get a list of campuses in CUNY.
 
 **URL** : `/api/campuses/`
@@ -27,7 +27,7 @@ Get a list of campuses in CUNY.
   
 * **[Sample Response](response/campuses.json)**
 
-## List Degrees
+## <a name="degrees"></a> List Degrees
 Get a list of degrees offered at particular campus.
 
 **URL** : `/api/degrees/{institute_code}`
@@ -49,7 +49,7 @@ where "institute_code" can be obtained from "/api/campuses"
 
 **Content** : `{}`
 
-## Course
+## <a name="course"></a> Course
 
 ### Get a course by course ID
 
@@ -101,7 +101,7 @@ There are two ways to search courses; by name or description of the course.
 
 **Content** : `{ "message": "No matching courses found" }`
 
-## Map
+## <a name="map"></a> Map
 
 ### Get a map by map_id
 **URL** : `/api/map/{map_id}`
