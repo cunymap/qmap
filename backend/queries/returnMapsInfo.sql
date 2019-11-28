@@ -38,5 +38,5 @@ FROM MAPS_DMAPS_LISTS
 WHERE map_id = @map_id AND !ISNULL(course7)
 ) AS F
 INNER JOIN MAPS_CRSE_CATALOG AS G
-	ON F.course_id = G.course_id
+ON F.course_id = G.course_id
 ORDER BY map_id, semester_num, course_id
