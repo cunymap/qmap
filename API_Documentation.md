@@ -1,6 +1,8 @@
 # API Documentation
 
-Currently under development. Please use sample data provided.
+Currently under development. 
+
+Link to API: https://cs355map.herokuapp.com
 
 ## Endpoints
 
@@ -69,6 +71,36 @@ where "institute_code" can be obtained from "/api/campuses"
 
 **Content** : `{}`
 
+### Search Courses 
+
+There are two ways to search courses; by name or description of the course.
+
+**URL** : `/api/course?q={search_string}&id={institute_id}&major={major}`
+
+**Method** : `GET`
+
+### Successful Response: 
+
+* **Code** : `200 OK`
+
+* **[Response for example request searching by description "/api/course/?q=Programming&id=17&major=computer%20science"](response/search_course_by_desc.json)**
+
+* **[Response for example request searching by name "/api/course/?q=355&id=17&major=computer%20science"](response/search_course_by_name.json)**
+
+### Error Response
+
+**Condition** : If `q`, or `major`, or `id` are mispelled or not provided.
+
+**Code** : `400 BAD REQUEST`
+
+**Content** : `{'message' : 'invalid query parameter'}`
+
+**Condition** : If no matches are found.
+
+**Code** : `200 OK`
+
+**Content** : `{ "message": "No matching courses found" }`
+
 ## Map
 
 ### Get a map by map_id
@@ -93,9 +125,6 @@ where "institute_code" can be obtained from "/api/campuses"
 ## TO BE IMPLEMENTED BY NEXT MILESTONE
 
 ### Endpoints:
-GET /api/course/search/?desc='internet':  Search course by description
-
-GET /api/course/search/?name='cs355':     Search course by name
 
 GET /api/map/q?campus='qns01'&degree='ACCT-BA' : Search maps available for a campus and major
 
