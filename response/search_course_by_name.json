@@ -1,0 +1,14 @@
+[
+    {
+        "course_id": "C005722",
+        "eff_date": "2006-02-01",
+        "institute_id": 17,
+        "status": "A",
+        "subject": "CSCI",
+        "catalog": "355",
+        "descr": "Internet and Web Technologies",
+        "min_units": "3",
+        "max_units": "3",
+        "designnation": "RLA"
+    }
+]
