@@ -1,0 +1,110 @@
+[
+    {
+        "course_id": "C005631",
+        "eff_date": "2015-03-23",
+        "institute_id": 17,
+        "status": "A",
+        "subject": "CSCI",
+        "catalog": "81",
+        "descr": "Intro to Web Programming",
+        "min_units": "3",
+        "max_units": "3",
+        "designnation": "RLA"
+    },
+    {
+        "course_id": "C005634",
+        "eff_date": "2013-05-01",
+        "institute_id": 17,
+        "status": "A",
+        "subject": "CSCI",
+        "catalog": "85",
+        "descr": "Database App Programming",
+        "min_units": "3",
+        "max_units": "3",
+        "designnation": "RLA"
+    },
+    {
+        "course_id": "C005675",
+        "eff_date": "2013-05-01",
+        "institute_id": 17,
+        "status": "A",
+        "subject": "CSCI",
+        "catalog": "280",
+        "descr": "Self-Study Programming",
+        "min_units": "1",
+        "max_units": "1",
+        "designnation": "RNL"
+    },
+    {
+        "course_id": "C005696",
+        "eff_date": "2013-05-08",
+        "institute_id": 17,
+        "status": "A",
+        "subject": "CSCI",
+        "catalog": "310",
+        "descr": "WWW Programming",
+        "min_units": "1",
+        "max_units": "1",
+        "designnation": "RNL"
+    },
+    {
+        "course_id": "C005701",
+        "eff_date": "2013-05-08",
+        "institute_id": 17,
+        "status": "A",
+        "subject": "CSCI",
+        "catalog": "316",
+        "descr": "Principles of Programming Lang",
+        "min_units": "3",
+        "max_units": "3",
+        "designnation": "RNL"
+    },
+    {
+        "course_id": "C005715",
+        "eff_date": "2013-05-09",
+        "institute_id": 17,
+        "status": "A",
+        "subject": "CSCI",
+        "catalog": "342",
+        "descr": "Operating-System Programming",
+        "min_units": "3",
+        "max_units": "3",
+        "designnation": "RLA"
+    },
+    {
+        "course_id": "C118602",
+        "eff_date": "2014-05-29",
+        "institute_id": 17,
+        "status": "A",
+        "subject": "CSCI",
+        "catalog": "48",
+        "descr": "Spreadsheet Programming",
+        "min_units": "3",
+        "max_units": "3",
+        "designnation": "RMQR"
+    },
+    {
+        "course_id": "C131288",
+        "eff_date": "2019-03-01",
+        "institute_id": 17,
+        "status": "A",
+        "subject": "CSCI",
+        "catalog": "611",
+        "descr": "Advanced Programming in C++",
+        "min_units": "3",
+        "max_units": "3",
+        "designnation": "GNL"
+    },
+    {
+        "course_id": "C131289",
+        "eff_date": "2019-03-01",
+        "institute_id": 17,
+        "status": "A",
+        "subject": "CSCI",
+        "catalog": "612",
+        "descr": "Advanced Programming in Java",
+        "min_units": "3",
+        "max_units": "3",
+        "designnation": "GNL"
+    }
+]
