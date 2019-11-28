@@ -1,3 +1,12 @@
+---------------------------------------------------------------------------------------
+-- Name - returnMapsInfo.sql
+-- Author - Evan Wu
+-- Date Last Modified - 11-21-2019
+-- Description - SQL File that contains query to pull a Degree Map.
+---------------------------------------------------------------------------------------
+-- Set map_id in python
+SET @map_id = %s;
+
 SELECT map_id, semester_num, F.course_id, G.subject, G.catalog, descr, min_units, max_units, designation
 FROM (
 SELECT map_id, semester_num, course1 AS 'course_id'
