@@ -5,7 +5,7 @@ import os
 import json
 from django.http import HttpResponse
 import sqlparse
-
+from collections import OrderedDict
 
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -76,7 +76,7 @@ class Map(APIView):
         keys = ('map_id','semester_num','course_id', 'subject', 'catalog', 'descr', 'min_units', 'max_units', 'designation')
 
         for row in rows:
-            result.append(dict(zip(keys,row)))
+            result.append(OrderedDict(zip(keys,row)))
 
         json_data = json.dumps(result, indent=4)
 
@@ -88,12 +88,23 @@ def get_queries_from_file(filename):
     """
 
     with open(os.path.join('backend', 'queries', filename), 'r') as file:
+
+        # Skip initial comments that starts with #
+        while True:
+            line = file.readline()
+            # break while statement if it is not a comment line
+            # i.e. does not startwith #
+            if not line.startswith('-'):
+                break
+
+        # Second while loop to process the rest of the file
         queryString = ""
-        for line in file:
-            if line.startswith("-"): #Skip comments    
-                continue;
-            else:
-                queryString += line.replace('\n', ' ')
+        while line:
+            # queryString += line.replace('\n', ' ')
+            queryString += line
+            line = file.readline()
+
     queries = sqlparse.split(queryString)
+    print(queries)
    
     return queries

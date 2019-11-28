@@ -28,8 +28,8 @@ Get a list of campuses in CUNY.
 ## List Degrees
 Get a list of degrees offered at particular campus.
 
-**URL** : `/api/degrees/{institutecode}`
-where "institutecode" can be obtained from "/api/campuses"
+**URL** : `/api/degrees/{institute_code}`
+where "institute_code" can be obtained from "/api/campuses"
 
 **Method** : `GET`
 
