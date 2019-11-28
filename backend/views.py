@@ -1,15 +1,19 @@
-from .models import *
-from .serializers import *
-from django.db import connection
 import os
 import json
-from django.http import HttpResponse
 import sqlparse
 from collections import OrderedDict
 
-from rest_framework.views import APIView
-from rest_framework.response import Response
+from .models import *
+from .serializers import *
+
+from django.db import connection
+from django.http import HttpResponse
+
 from rest_framework import status
+from rest_framework.views import APIView
+from rest_framework import viewsets
+from rest_framework.decorators import action
+from rest_framework.response import Response
 
 # class MapsViewSet(viewsets.ModelViewSet):
 #     """
@@ -40,22 +44,60 @@ class Degrees(APIView):
         else:
             return Response({}, status=status.HTTP_404_NOT_FOUND)
 
-class Course(APIView):
+class Course(viewsets.ViewSet):
     """
     API endpoint for courses in course catalog
     """
-    def get(self, request, crse_id, format=None): #get a course by id
+    """
+    Get a course's details by course ID
+    """
+    def retrieve(self, request, crse_id=None): #get a course by id
+
         serializer_context = {
             'request': request,
         }
         course = MapsCrseCatalog.objects.filter(course_id=crse_id)
-        print(course.query)
         serializer = CourseSerializer(course, context=serializer_context, many=True)
 
         if course.exists():
             return Response(serializer.data)
         else:
             return Response({}, status=status.HTTP_404_NOT_FOUND)
+
+    """ 
+    Search a course by institution, and name, or description
+    """
+    @action(detail=True, methods=['get'])
+    def search(self, request, *args, **kwargs):
+        q = request.query_params.get('q')
+        id = request.query_params.get('id')
+        major = request.query_params.get('major')
+
+        if q is None or id is None or major is None:
+            return Response({'message' : 'invalid query parameter'}, status=status.HTTP_400_BAD_REQUEST)
+
+        queries = get_queries_from_file('findCourse.sql')
+
+        with connection.cursor() as cursor:
+            cursor.execute(queries[0], [id])
+            cursor.execute(queries[1], [major])
+            cursor.execute(queries[2], [q])
+            cursor.execute(queries[3])
+            rows = cursor.fetchall()
+
+        # Parse results to json format
+        result = []
+        keys = ('course_id', 'eff_date', 'institute_id', 'status', 'subject', 'catalog', 'descr', 'min_units', 'max_units', 'designnation')
+
+        for row in rows:
+            result.append(OrderedDict(zip(keys,row)))
+
+        if(len(result) == 0):
+            return Response({ 'message': 'No matching courses found' }, status=status.HTTP_200_OK)
+        
+        else:
+            json_data = json.dumps(result, indent=4, default=str)
+            return HttpResponse(json_data, content_type="application/json")
 
 
 class Map(APIView):
@@ -105,6 +147,5 @@ def get_queries_from_file(filename):
             line = file.readline()
 
     queries = sqlparse.split(queryString)
-    print(queries)
    
     return queries

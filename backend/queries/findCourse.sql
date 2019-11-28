@@ -7,9 +7,9 @@
 --				Then the HAVING clauses searches based on input in both Catalog # and Course Description.
 ---------------------------------------------------------------------------------------
 
-SET @institute_id = '17';
-SET @major = 'Computer Science';
-SET @search_input = 'Programming';
+SET @institute_id = %s;
+SET @major = %s;
+SET @search_input = %s;
 
 SELECT A.course_id, A.eff_date, A.institute_id, A.status, A.subject, A.catalog, A.descr, A.min_units, A.max_units, A.designation
 		FROM MAPS_CRSE_CATALOG AS A

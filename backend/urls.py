@@ -20,6 +20,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from . import views
 
+from collections import OrderedDict
 
 class DocsView(APIView):
     """
@@ -27,18 +28,30 @@ class DocsView(APIView):
     """
     #source: https://stackoverflow.com/questions/37066146/defaultrouter-class-not-creating-api-root-view-for-all-apps-in-python
     def get(self, request, *args, **kwargs):
-        apidocs = {
-                   'SysAdminPage': request.build_absolute_uri('admin'),
-                   'Campuses': request.build_absolute_uri('api/campuses/'),
-                   'Degrees': request.build_absolute_uri('api/degrees/qns01/'),
-                   'Course': request.build_absolute_uri('api/course/c000737/'),
-                   'Map': request.build_absolute_uri('api/map/1'),
-                   }
+
+        apidocs = [
+                    ('Campuses', request.build_absolute_uri('api/campuses/')),
+                    ('Degrees', request.build_absolute_uri('api/degrees/qns01/')),
+                    ('Course', request.build_absolute_uri('api/course/c000737/')),
+                    ('CourseSearchByClassName', request.build_absolute_uri('api/course/?q=355&id=17&major=computer%20science')),
+                    ('CourseSearchByClassDescription', request.build_absolute_uri('api/course/?q=Programming&id=17&major=computer%20science')),
+                    ('Map', request.build_absolute_uri('api/map/1')),
+                ]
+
+        apidocs = OrderedDict(apidocs)
+
         return Response(apidocs)
 
 
 router = routers.DefaultRouter()
 
+course_detail = views.Course.as_view({
+    'get': 'retrieve'
+})
+
+course_search = views.Course.as_view({
+    'get': 'search'
+})
 
 urlpatterns = [
     path('', DocsView.as_view()),
@@ -46,6 +59,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/campuses/', views.Campuses.as_view()),
     path('api/degrees/<str:code>/', views.Degrees.as_view()),
-    path('api/course/<str:crse_id>/', views.Course.as_view()),
-    path('api/map/<str:map_id>/', views.Map.as_view())
+    path('api/course/', course_search, name='course_search'),
+    path('api/course/<str:crse_id>/', course_detail, name='course_detail'),
+    path('api/map/<str:map_id>/', views.Map.as_view()),
     ]
+# ?q=<str:query>&id=<str:institution_id>&major=<str:major>', views.CourseSearch.as_view())
