@@ -108,6 +108,9 @@ class Map(APIView):
         # Get and execute query from file
         queries = get_queries_from_file("returnMapsInfo.sql")
 
+        if not mapExists(map_id):
+            return Response({ 'message' : 'map_id does not exist'}, status=status.HTTP_404_NOT_FOUND)
+
         with connection.cursor() as cursor:
             cursor.execute(queries[0], [map_id])
             cursor.execute(queries[1])
@@ -123,7 +126,36 @@ class Map(APIView):
         json_data = json.dumps(result, indent=4)
 
         return HttpResponse(json_data, content_type="application/json")
+    
+    """
+    Delete a map by map_id
+    """
+    def delete(self, request, map_id, format=None):
+        # TODO: Authorization
 
+        queries = get_queries_from_file("deleteMaps.sql")
+
+        if not mapExists(map_id):
+            return Response({ 'message' : 'map_id does not exist'}, status=status.HTTP_404_NOT_FOUND)
+
+        with connection.cursor() as cursor:
+            cursor.execute(queries[0], [map_id])
+            cursor.execute(queries[1])
+            cursor.execute(queries[2])
+           
+        return Response({}, status=status.HTTP_204_NO_CONTENT)
+
+def mapExists(map_id):
+    """
+    Check if a map exists in the database
+    """
+    with connection.cursor() as c:
+        c.execute("SELECT * FROM MAPS_DMAPS_LISTS WHERE map_id = %s", map_id)
+        rows = c.fetchall()
+    
+    if len(rows) == 0:
+        return False
+    return True
 def get_queries_from_file(filename):
     """ 
     Parses a sql file and returns sql queries as a list
@@ -142,7 +174,6 @@ def get_queries_from_file(filename):
         # Second while loop to process the rest of the file
         queryString = ""
         while line:
-            # queryString += line.replace('\n', ' ')
             queryString += line
             line = file.readline()
 

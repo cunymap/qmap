@@ -112,7 +112,7 @@ There are two ways to search courses; by name or description of the course.
 
 * **Code** : `200 OK`
 
-* **[Response for example request "/api/map/1"](response/get_map_by_id.json)**
+* **[Response for example request "/api/map/2"](response/get_map_by_id.json)**
 
 ### Error Response
 
@@ -120,7 +120,26 @@ There are two ways to search courses; by name or description of the course.
 
 **Code** : `404 NOT FOUND`
 
-**Content** : `{}`
+**Content** : `{ 'message' : 'map_id does not exist' }`
+
+### Delete a map by map_id
+
+**URL** : `/api/map/{map_id}`
+
+**Method** : `DELETE`
+
+### Successful Response: 
+
+* **Code** : `204 NO CONTENT`
+
+### Error Response
+
+**Condition** : If `map_id` is not found.
+
+**Code** : `404 NOT FOUND`
+
+**Content** : `{ 'message' : 'map_id does not exist' }`
+
 
 ## TO BE IMPLEMENTED BY NEXT MILESTONE
 
@@ -130,4 +149,3 @@ GET /api/map/q?campus='qns01'&degree='ACCT-BA' : Search maps available for a cam
 
 PUT /api/map/{map_id}:  Make changes to a map
 
-DELETE /api/map/{map_id}:  Delete a map

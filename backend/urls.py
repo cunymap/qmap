@@ -35,7 +35,7 @@ class DocsView(APIView):
                     ('Course', request.build_absolute_uri('api/course/c000737/')),
                     ('CourseSearchByClassName', request.build_absolute_uri('api/course/?q=355&id=17&major=computer%20science')),
                     ('CourseSearchByClassDescription', request.build_absolute_uri('api/course/?q=Programming&id=17&major=computer%20science')),
-                    ('Map', request.build_absolute_uri('api/map/1')),
+                    ('Map', request.build_absolute_uri('api/map/2')),
                 ]
 
         apidocs = OrderedDict(apidocs)

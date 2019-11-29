@@ -7,7 +7,7 @@
 -- Variables - to_delete - Set to the map ID that should be deleted.
 ---------------------------------------------------------------------------------------
 
-SET @to_delete = '1';
+SET @to_delete = %s;
 
 DELETE FROM MAPS_DMAPS_LISTS
 WHERE map_id = @to_delete;
