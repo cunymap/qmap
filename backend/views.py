@@ -87,7 +87,7 @@ class Course(viewsets.ViewSet):
 
         # Parse results to json format
         result = []
-        keys = ('course_id', 'eff_date', 'institute_id', 'status', 'subject', 'catalog', 'descr', 'min_units', 'max_units', 'designnation')
+        keys = ('course_id', 'eff_date', 'institute_id', 'status', 'subject', 'catalog', 'descr', 'min_units', 'max_units')
 
         for row in rows:
             result.append(OrderedDict(zip(keys,row)))
