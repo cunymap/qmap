@@ -1,4 +1,4 @@
-"""myproject URL Configuration
+"""DegreeMaps URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -31,7 +31,7 @@ class DocsView(APIView):
 
         apidocs = [
                     ('Campuses', request.build_absolute_uri('api/campuses/')),
-                    ('Degrees', request.build_absolute_uri('api/degrees/qns01/')),
+                    ('Degrees', request.build_absolute_uri('api/degrees/17/')),
                     ('Course', request.build_absolute_uri('api/course/c000737/')),
                     ('CourseSearchByClassName', request.build_absolute_uri('api/course/?q=355&id=17&major=computer%20science')),
                     ('CourseSearchByClassDescription', request.build_absolute_uri('api/course/?q=Programming&id=17&major=computer%20science')),
@@ -41,7 +41,6 @@ class DocsView(APIView):
         apidocs = OrderedDict(apidocs)
 
         return Response(apidocs)
-
 
 router = routers.DefaultRouter()
 
@@ -58,9 +57,8 @@ urlpatterns = [
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
     path('api/campuses/', views.Campuses.as_view()),
-    path('api/degrees/<str:code>/', views.Degrees.as_view()),
+    path('api/degrees/<int:id>/', views.Degrees.as_view()),
     path('api/course/', course_search, name='course_search'),
     path('api/course/<str:crse_id>/', course_detail, name='course_detail'),
     path('api/map/<str:map_id>/', views.Map.as_view()),
     ]
-# ?q=<str:query>&id=<str:institution_id>&major=<str:major>', views.CourseSearch.as_view())

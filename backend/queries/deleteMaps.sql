@@ -5,7 +5,7 @@
 -- Description - SQL File that contains query to delete from both Lists and Meta. 
 ---------------------------------------------------------------------------------------
 
-SET @to_delete = '1';
+SET @to_delete = %s;
 
 DELETE FROM MAPS_DMAPS_LISTS
 WHERE map_id = @to_delete;

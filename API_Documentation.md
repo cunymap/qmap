@@ -30,8 +30,8 @@ Get a list of campuses in CUNY.
 ## <a name="degrees"></a> List Degrees
 Get a list of degrees offered at particular campus.
 
-**URL** : `/api/degrees/{institute_code}`
-where "institute_code" can be obtained from "/api/campuses"
+**URL** : `/api/degrees/{institute_id}`
+where "institute_id" can be obtained from "/api/campuses"
 
 **Method** : `GET`
 
@@ -43,7 +43,7 @@ where "institute_code" can be obtained from "/api/campuses"
 
 ### Error Response
 
-**Condition** : If provided `institutecode` parameter is not correct.
+**Condition** : If provided `institute_id` parameter is not correct.
 
 **Code** : `404 NOT FOUND`
 
@@ -145,7 +145,6 @@ There are two ways to search courses; by name or description of the course.
 
 ### Endpoints:
 
-GET /api/map/q?campus='qns01'&degree='ACCT-BA' : Search maps available for a campus and major
+GET /api/map/q?institute_id='17'&degree='Computer Science' : Search maps available for a campus and major
 
 PUT /api/map/{map_id}:  Make changes to a map
-

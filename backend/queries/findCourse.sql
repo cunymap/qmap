@@ -5,9 +5,9 @@
 -- Description - SQL File that queries the MAPS_CRSE_CATALOG for majors within an institution.
 ---------------------------------------------------------------------------------------
 
-SET @institute_id = '17';
-SET @major = 'Computer Science';
-SET @search_input = 'Programming';
+SET @institute_id = %s;
+SET @major = %s;
+SET @search_input = %s;
 
 SELECT *
 FROM MAPS_CRSE_CATALOG AS A

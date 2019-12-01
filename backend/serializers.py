@@ -1,15 +1,15 @@
-from .models import MapsCrseCatalog, MapsInstitutions, AcadPlanTblLtd, MapsDmapsLists
+from .models import MapsCrseCatalog, MapsInstitutions, MapsDmapsLists, MapsAcadPlan
 from rest_framework import serializers
 
 class CampusSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = MapsInstitutions
-        fields = ['id','code','descr']
+        fields = ['institute_id', 'descr']
 
 class DegreesSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = AcadPlanTblLtd
-        fields = ['acad_plan', 'degree', 'degree_descr', 'degree_long_descr']
+        model = MapsAcadPlan
+        fields = ['institute_id', 'degree_descr', 'level_descr']
 
 class MapSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
