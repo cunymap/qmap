@@ -1,127 +1,106 @@
 [
     {
-        "id": 1,
-        "code": "BAR01",
+        "institute_id": 0,
+        "descr": "All Institutions"
+    },
+    {
+        "institute_id": 1,
         "descr": "Baruch College"
     },
     {
-        "id": 2,
-        "code": "BMC01",
+        "institute_id": 2,
         "descr": "Borough of Manhattan CC"
     },
     {
-        "id": 3,
-        "code": "BCC01",
+        "institute_id": 3,
         "descr": "Bronx CC"
     },
     {
-        "id": 4,
-        "code": "BKL01",
+        "institute_id": 4,
         "descr": "Brooklyn College"
     },
     {
-        "id": 5,
-        "code": "CTY01",
+        "institute_id": 5,
         "descr": "City College"
     },
     {
-        "id": 6,
-        "code": "CSI01",
+        "institute_id": 6,
         "descr": "College of Staten Island"
     },
     {
-        "id": 7,
-        "code": "GRD01",
+        "institute_id": 7,
         "descr": "Graduate Center"
     },
     {
-        "id": 8,
-        "code": "NCC01",
+        "institute_id": 8,
         "descr": "Guttman CC"
     },
     {
-        "id": 9,
-        "code": "HOS01",
+        "institute_id": 9,
         "descr": "Hostos CC"
     },
     {
-        "id": 10,
-        "code": "HTR01",
+        "institute_id": 10,
         "descr": "Hunter College"
     },
     {
-        "id": 11,
-        "code": "JJC01",
+        "institute_id": 11,
         "descr": "John Jay College"
     },
     {
-        "id": 12,
-        "code": "KCC01",
+        "institute_id": 12,
         "descr": "Kingsborough CC"
     },
     {
-        "id": 13,
-        "code": "LAG01",
+        "institute_id": 13,
         "descr": "LaGuardia CC"
     },
     {
-        "id": 14,
-        "code": "LEH01",
+        "institute_id": 14,
         "descr": "Lehman College"
     },
     {
-        "id": 15,
-        "code": "MEC01",
+        "institute_id": 15,
         "descr": "Medgar Evers College"
     },
     {
-        "id": 16,
-        "code": "NYT01",
+        "institute_id": 16,
         "descr": "NYC College of Technology"
     },
     {
-        "id": 17,
-        "code": "QNS01",
+        "institute_id": 17,
         "descr": "Queens College"
     },
     {
-        "id": 18,
-        "code": "QCC01",
+        "institute_id": 18,
         "descr": "Queensborough CC"
     },
     {
-        "id": 19,
-        "code": "SOJ01",
+        "institute_id": 19,
         "descr": "School of Journalism"
     },
     {
-        "id": 20,
-        "code": "SLU01",
+        "institute_id": 20,
         "descr": "School of Labor&Urban Studies"
     },
     {
-        "id": 21,
-        "code": "LAW01",
+        "institute_id": 21,
         "descr": "School of Law"
     },
     {
-        "id": 22,
-        "code": "MED01",
+        "institute_id": 22,
         "descr": "School of Medicine"
     },
     {
-        "id": 23,
-        "code": "SPS01",
+        "institute_id": 23,
         "descr": "School of Professional Studies"
     },
     {
-        "id": 24,
-        "code": "SPH01",
+        "institute_id": 24,
         "descr": "School of Public Health"
     },
     {
-        "id": 25,
-        "code": "YRK01",
+        "institute_id": 25,
         "descr": "York College"
     }
 ]
