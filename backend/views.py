@@ -149,27 +149,19 @@ def mapExists(map_id):
     if len(rows) == 0:
         return False
     return True
+    
 def get_queries_from_file(filename):
     """ 
     Parses a sql file and returns sql queries as a list
     """
-
     with open(os.path.join('backend', 'queries', filename), 'r') as file:
+        query_string = ""
+        for line in file:
+            if line.startswith("-"): #Skip comments    
+                continue
+            else:
+                query_string += line.replace('\n', ' ')
 
-        # Skip initial comments that starts with #
-        while True:
-            line = file.readline()
-            # break while statement if it is not a comment line
-            # i.e. does not startwith #
-            if not line.startswith('-'):
-                break
-
-        # Second while loop to process the rest of the file
-        queryString = ""
-        while line:
-            queryString += line
-            line = file.readline()
-
-    queries = sqlparse.split(queryString)
+    queries = sqlparse.split(query_string)
    
     return queries

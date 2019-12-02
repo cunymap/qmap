@@ -9,7 +9,7 @@ class CampusSerializer(serializers.HyperlinkedModelSerializer):
 class DegreesSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = MapsAcadPlan
-        fields = ['institute_id', 'degree_descr', 'level_descr']
+        fields = ['degree', 'level', 'institute_id', 'degree_descr', 'level_descr']
 
 class MapSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
