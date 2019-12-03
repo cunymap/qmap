@@ -1,0 +1,329 @@
+<!-- This is a basic example of how to make a post request 
+to our API to create a map. Should be improved upon -->
+
+
+<!Doctype HTML>
+
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+    <form id="createMapForm">
+        <h1> These are all the required fields needed from client to create a map in the database.  Some fields are user
+         inputs and some are provided with the admin account. 
+        </h1>
+
+        <p>
+         Refer to MAPS_DMAPS_LISTS and MAPS_DMAPS_META tables to look at these fields in detail.
+         </p>
+
+        <label for="map_name">Map Name</label>
+        <input id="map_name" type="text" value="Name of the map" /><br>
+
+        <label for="degree">Degree</label>
+        <input id="degree" type="text" value="Computer Science" />
+        <span> <-- Should be the full value obtained from MAPS_ACAD_PLAN - EX CSCI should be "Computer Science".</span>
+        <br>
+
+        <label for="start_year">Start Year</label>
+        <input id="start_year" type="text" value="SP 2018" />
+        <span><-- this should be in the format SP YYYY for spring or FA YYYY for fall </span>
+        <br>
+
+        <label for="institute_id">Institute ID</label>
+        <input id="institute_id" type="text" value="17" />
+        <span><-- This is the institution. 17 is for Queens College. This field should be automatically obtained from user account  </span>
+        <br>
+
+        <label for="submit_id">Submit ID</label>
+        <input id="submit_id" type="text" value="12345678" />
+        <span><-- This is the admin's cuny id. This field should be automatically obtained from user account  </span>
+        <br>
+
+        <hr>
+        <h2> The fields below are to add courses. Up to 7 courses per semester. Can be left blank but the fields must be passed in form data. </h2>
+
+        <p>Semester 1</p>
+
+        <label for="sem1_class1">Course 1</label>
+        <input id="sem1_class1" type="text" value="C003007" /><br>
+
+        <label for="sem1_class2">Course 2</label>
+        <input id="sem1_class2" type="text" value="C006467" /><br>
+
+        <label for="sem1_class3">Course 3</label>
+        <input id="sem1_class3" type="text" value="C005621" /><br>
+
+        <label for="sem1_class4">Course 4</label>
+        <input id="sem1_class4" type="text" value="" /><br>
+
+        <label for="sem1_class5">Course 5</label>
+        <input id="sem1_class5" type="text" value="" /><br>
+
+        <label for="sem1_class6">Course 6</label>
+        <input id="sem1_class6" type="text" value="" /><br>
+
+        <label for="sem1_class7">Course 7</label>
+        <input id="sem1_class7" type="text" value="" /><br>
+
+        <p>Semester 2</p>
+
+        <label for="sem2_class1">Course 1</label>
+        <input id="sem2_class1" type="text" value="C003008" /><br>
+
+        <label for="sem2_class2">Course 2</label>
+        <input id="sem2_class2" type="text" value="C006469" /><br>
+
+        <label for="sem2_class3">Course 3</label>
+        <input id="sem2_class3" type="text" value="" /><br>
+
+        <label for="sem2_class4">Course 4</label>
+        <input id="sem2_class4" type="text" value="" /><br>
+
+        <label for="sem2_class5">Course 5</label>
+        <input id="sem2_class5" type="text" value="" /><br>
+
+        <label for="sem2_class6">Course 6</label>
+        <input id="sem2_class6" type="text" value="" /><br>
+
+        <label for="sem2_class7">Course 7</label>
+        <input id="sem2_class7" type="text" value="" /><br>
+
+        <p>Semester 3</p>
+
+        <label for="sem3_class1">Course 1</label>
+        <input id="sem3_class1" type="text" value="C003009" /><br>
+
+        <label for="sem3_class2">Course 2</label>
+        <input id="sem3_class2" type="text" value="C003013" /><br>
+
+        <label for="sem3_class3">Course 3</label>
+        <input id="sem3_class3" type="text" value="C003011" /><br>
+
+        <label for="sem3_class4">Course 4</label>
+        <input id="sem3_class4" type="text" value="" /><br>
+
+        <label for="sem3_class5">Course 5</label>
+        <input id="sem3_class5" type="text" value="" /><br>
+
+        <label for="sem3_class6">Course 6</label>
+        <input id="sem3_class6" type="text" value="" /><br>
+
+        <label for="sem3_class7">Course 7</label>
+        <input id="sem3_class7" type="text" value="" /><br>
+
+        <p>Semester 4</p>
+
+        <label for="sem4_class1">Course 1</label>
+        <input id="sem4_class1" type="text" value="C003009" /><br>
+
+        <label for="sem4_class2">Course 2</label>
+        <input id="sem4_class2" type="text" value="C003013" /><br>
+
+        <label for="sem4_class3">Course 3</label>
+        <input id="sem4_class3" type="text" value="C003011" /><br>
+
+        <label for="sem4_class4">Course 4</label>
+        <input id="sem4_class4" type="text" value="" /><br>
+
+        <label for="sem4_class5">Course 5</label>
+        <input id="sem4_class5" type="text" value="" /><br>
+
+        <label for="sem4_class6">Course 6</label>
+        <input id="sem4_class6" type="text" value="" /><br>
+
+        <label for="sem4_class7">Course 7</label>
+        <input id="sem4_class7" type="text" value="" /><br>
+
+        <p>Semester 5</p>
+
+        <label for="sem5_class1">Course 1</label>
+        <input id="sem5_class1" type="text" value="C003009" /><br>
+
+        <label for="sem5_class2">Course 2</label>
+        <input id="sem5_class2" type="text" value="C003013" /><br>
+
+        <label for="sem5_class3">Course 3</label>
+        <input id="sem5_class3" type="text" value="C003011" /><br>
+
+        <label for="sem5_class4">Course 4</label>
+        <input id="sem5_class4" type="text" value="" /><br>
+
+        <label for="sem5_class5">Course 5</label>
+        <input id="sem5_class5" type="text" value="" /><br>
+
+        <label for="sem5_class6">Course 6</label>
+        <input id="sem5_class6" type="text" value="" /><br>
+
+        <label for="sem5_class7">Course 7</label>
+        <input id="sem5_class7" type="text" value="" /><br>
+
+        <p>Semester 6</p>
+
+        <label for="sem6_class1">Course 1</label>
+        <input id="sem6_class1" type="text" value="C003009" /><br>
+
+        <label for="sem6_class2">Course 2</label>
+        <input id="sem6_class2" type="text" value="C003013" /><br>
+
+        <label for="sem6_class3">Course 3</label>
+        <input id="sem6_class3" type="text" value="C003011" /><br>
+
+        <label for="sem6_class4">Course 4</label>
+        <input id="sem6_class4" type="text" value="" /><br>
+
+        <label for="sem6_class5">Course 5</label>
+        <input id="sem6_class5" type="text" value="" /><br>
+
+        <label for="sem6_class6">Course 6</label>
+        <input id="sem6_class6" type="text" value="" /><br>
+
+        <label for="sem6_class7">Course 7</label>
+        <input id="sem6_class7" type="text" value="" /><br>
+
+        <p>Semester 7</p>
+
+        <label for="sem7_class1">Course 1</label>
+        <input id="sem7_class1" type="text" value="C003009" /><br>
+
+        <label for="sem7_class2">Course 2</label>
+        <input id="sem7_class2" type="text" value="C003013" /><br>
+
+        <label for="sem7_class3">Course 3</label>
+        <input id="sem7_class3" type="text" value="C003011" /><br>
+
+        <label for="sem7_class4">Course 4</label>
+        <input id="sem7_class4" type="text" value="" /><br>
+
+        <label for="sem7_class5">Course 5</label>
+        <input id="sem7_class5" type="text" value="" /><br>
+
+        <label for="sem7_class6">Course 6</label>
+        <input id="sem7_class6" type="text" value="" /><br>
+
+        <label for="sem7_class7">Course 7</label>
+        <input id="sem7_class7" type="text" value="" /><br>
+
+        <p>Semester 8</p>
+
+        <label for="sem8_class1">Course 1</label>
+        <input id="sem8_class1" type="text" value="C003009" /><br>
+
+        <label for="sem8_class2">Course 2</label>
+        <input id="sem8_class2" type="text" value="C003013" /><br>
+
+        <label for="sem8_class3">Course 3</label>
+        <input id="sem8_class3" type="text" value="C003011" /><br>
+
+        <label for="sem8_class4">Course 4</label>
+        <input id="sem8_class4" type="text" value="" /><br>
+
+        <label for="sem8_class5">Course 5</label>
+        <input id="sem8_class5" type="text" value="" /><br>
+
+        <label for="sem8_class6">Course 6</label>
+        <input id="sem8_class6" type="text" value="" /><br>
+
+        <label for="sem8_class7">Course 7</label>
+        <input id="sem8_class7" type="text" value="" /><br>
+
+
+        <input id="submitButton" type="button" value="Submit" disabled />
+    </form>
+
+
+    <!--- Handle form request -->
+    <script>
+
+        var hostname = "https://cs355map.herokuapp.com" //"http://127.0.0.1:8000" 
+        var endpoint = "/api/map/"
+
+        $('#submitButton').on('click',function(){
+            $.ajax({
+                url: hostname + endpoint,
+                type: 'POST',
+                data: { 
+                    map_name: $('#map_name').val(),
+                    degree: $('#degree').val(),
+                    start_year: $('#start_year').val(),
+                    institute_id: $('#institute_id').val(),
+                    submit_id: $('#submit_id').val(),
+                    sem1_class1: $('#sem1_class1').val(),
+                    sem1_class2: $('#sem1_class2').val(),
+                    sem1_class3: $('#sem1_class3').val(),
+                    sem1_class4: $('#sem1_class4').val(),
+                    sem1_class5: $('#sem1_class5').val(),
+                    sem1_class6: $('#sem1_class6').val(),
+                    sem1_class7: $('#sem1_class7').val(),
+                    sem2_class1: $('#sem2_class1').val(),
+                    sem2_class2: $('#sem2_class2').val(),
+                    sem2_class3: $('#sem2_class3').val(),
+                    sem2_class4: $('#sem2_class4').val(),
+                    sem2_class5: $('#sem2_class5').val(),
+                    sem2_class6: $('#sem2_class6').val(),
+                    sem2_class7: $('#sem2_class7').val(),
+                    sem3_class1: $('#sem3_class1').val(),
+                    sem3_class2: $('#sem3_class2').val(),
+                    sem3_class3: $('#sem3_class3').val(),
+                    sem3_class4: $('#sem3_class4').val(),
+                    sem3_class5: $('#sem3_class5').val(),
+                    sem3_class6: $('#sem3_class6').val(),
+                    sem3_class7: $('#sem3_class7').val(),
+                    sem3_class1: $('#sem3_class1').val(),
+                    sem3_class2: $('#sem3_class2').val(),
+                    sem3_class3: $('#sem3_class3').val(),
+                    sem3_class4: $('#sem3_class4').val(),
+                    sem3_class5: $('#sem3_class5').val(),
+                    sem3_class6: $('#sem3_class6').val(),
+                    sem3_class7: $('#sem3_class7').val(),
+                    sem4_class1: $('#sem4_class1').val(),
+                    sem4_class2: $('#sem4_class2').val(),
+                    sem4_class3: $('#sem4_class3').val(),
+                    sem4_class4: $('#sem4_class4').val(),
+                    sem4_class5: $('#sem4_class5').val(),
+                    sem4_class6: $('#sem4_class6').val(),
+                    sem4_class7: $('#sem4_class7').val(),
+                    sem5_class1: $('#sem5_class1').val(),
+                    sem5_class2: $('#sem5_class2').val(),
+                    sem5_class3: $('#sem5_class3').val(),
+                    sem5_class4: $('#sem5_class4').val(),
+                    sem5_class5: $('#sem5_class5').val(),
+                    sem5_class6: $('#sem5_class6').val(),
+                    sem5_class7: $('#sem5_class7').val(),
+                    sem6_class1: $('#sem6_class1').val(),
+                    sem6_class2: $('#sem6_class2').val(),
+                    sem6_class3: $('#sem6_class3').val(),
+                    sem6_class4: $('#sem6_class4').val(),
+                    sem6_class5: $('#sem6_class5').val(),
+                    sem6_class6: $('#sem6_class6').val(),
+                    sem6_class7: $('#sem6_class7').val(),
+                    sem7_class1: $('#sem7_class1').val(),
+                    sem7_class2: $('#sem7_class2').val(),
+                    sem7_class3: $('#sem7_class3').val(),
+                    sem7_class4: $('#sem7_class4').val(),
+                    sem7_class5: $('#sem7_class5').val(),
+                    sem7_class6: $('#sem7_class6').val(),
+                    sem7_class7: $('#sem7_class7').val(),
+                    sem8_class1: $('#sem8_class1').val(),
+                    sem8_class2: $('#sem8_class2').val(),
+                    sem8_class3: $('#sem8_class3').val(),
+                    sem8_class4: $('#sem8_class4').val(),
+                    sem8_class5: $('#sem8_class5').val(),
+                    sem8_class6: $('#sem8_class6').val(),
+                    sem8_class7: $('#sem8_class7').val(),
+                },
+                contentType: 'application/x-www-form-urlencoded',
+                async: false
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

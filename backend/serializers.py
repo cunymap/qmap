@@ -20,4 +20,3 @@ class CourseSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = MapsCrseCatalog
         fields = ['course_id', 'eff_date', 'status', 'subject', 'catalog', 'descr', 'min_units', 'max_units', 'designation']
-

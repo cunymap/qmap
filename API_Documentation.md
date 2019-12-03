@@ -104,11 +104,12 @@ There are two ways to search courses; by name or description of the course.
 ## <a name="map"></a> Map
 
 ### Get a map by map_id
+
 **URL** : `/api/map/{map_id}`
 
 **Method** : `GET`
 
-### Successful Response: 
+### Successful Response:
 
 * **Code** : `200 OK`
 
@@ -139,6 +140,20 @@ There are two ways to search courses; by name or description of the course.
 **Code** : `404 NOT FOUND`
 
 **Content** : `{ 'message' : 'map_id does not exist' }`
+
+### Create a map 
+
+**URL** : `/api/map/`
+
+**Method** : `POST`
+
+### Successful Response: 
+
+* **Code** : `201 CREATED`
+
+* **Content** : `{ 'message' : 'map successfully created' }`
+
+* **[example request"](request/addMap.html)**
 
 
 ## TO BE IMPLEMENTED BY NEXT MILESTONE

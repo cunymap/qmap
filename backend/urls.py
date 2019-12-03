@@ -45,11 +45,21 @@ class DocsView(APIView):
 router = routers.DefaultRouter()
 
 course_detail = views.Course.as_view({
-    'get': 'retrieve'
+    'get': 'retrieve',
 })
 
 course_search = views.Course.as_view({
     'get': 'search'
+})
+
+map = views.Map.as_view({
+    'post': 'create_map',
+})
+
+maps_by_id = views.Map.as_view({
+    'get': 'get_map_by_id',
+    'delete': 'delete_map_by_id',
+    'put': 'edit_map_by_id'
 })
 
 urlpatterns = [
@@ -60,5 +70,6 @@ urlpatterns = [
     path('api/degrees/<int:id>/', views.Degrees.as_view()),
     path('api/course/', course_search, name='course_search'),
     path('api/course/<str:crse_id>/', course_detail, name='course_detail'),
-    path('api/map/<str:map_id>/', views.Map.as_view()),
+    path('api/map/', map, name='map'),
+    path('api/map/<str:map_id>/', maps_by_id, name='maps_by_id')
     ]
