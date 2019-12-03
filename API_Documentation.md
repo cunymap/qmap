@@ -71,7 +71,7 @@ where "institute_id" can be obtained from "/api/campuses"
 
 **Content** : `{}`
 
-### Search Courses 
+## Search Courses 
 
 There are two ways to search courses; by name or description of the course.
 
@@ -109,13 +109,13 @@ There are two ways to search courses; by name or description of the course.
 
 **Method** : `GET`
 
-### Successful Response:
+#### Successful Response:
 
 * **Code** : `200 OK`
 
 * **[Response for example request "/api/map/2"](response/get_map_by_id.json)**
 
-### Error Response
+#### Error Response
 
 **Condition** : If `map_id` is not found.
 
@@ -129,11 +129,11 @@ There are two ways to search courses; by name or description of the course.
 
 **Method** : `DELETE`
 
-### Successful Response: 
+#### Successful Response: 
 
 * **Code** : `204 NO CONTENT`
 
-### Error Response
+#### Error Response
 
 **Condition** : If `map_id` is not found.
 
@@ -147,13 +147,13 @@ There are two ways to search courses; by name or description of the course.
 
 **Method** : `POST`
 
-### Successful Response: 
+#### Successful Response: 
 
 * **Code** : `201 CREATED`
 
 * **Content** : `{ 'message' : 'map successfully created' }`
 
-* **[example request"](request/addMap.html)**
+* **[example request](request/addMap.html)**
 
 
 ## TO BE IMPLEMENTED BY NEXT MILESTONE
