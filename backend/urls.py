@@ -36,6 +36,7 @@ class DocsView(APIView):
                     ('CourseSearchByClassName', request.build_absolute_uri('api/course/?q=355&id=17&major=computer%20science')),
                     ('CourseSearchByClassDescription', request.build_absolute_uri('api/course/?q=Programming&id=17&major=computer%20science')),
                     ('Map', request.build_absolute_uri('api/map/2')),
+                    ('MapsByInstitueAndMajor', request.build_absolute_uri('api/map/?inst_id=17&degree=computer%20science'))
                 ]
 
         apidocs = OrderedDict(apidocs)
@@ -54,6 +55,7 @@ course_search = views.Course.as_view({
 
 map = views.Map.as_view({
     'post': 'create_map',
+    'get': 'map_by_institute_majorId'
 })
 
 maps_by_id = views.Map.as_view({
@@ -61,6 +63,10 @@ maps_by_id = views.Map.as_view({
     'delete': 'delete_map_by_id',
     'put': 'edit_map_by_id'
 })
+
+# map_by_institute_majorId = views.Map.as_view({
+#     'get': 'map_by_institute_majorId'
+# })
 
 urlpatterns = [
     path('', DocsView.as_view()),
@@ -71,5 +77,5 @@ urlpatterns = [
     path('api/course/', course_search, name='course_search'),
     path('api/course/<str:crse_id>/', course_detail, name='course_detail'),
     path('api/map/', map, name='map'),
-    path('api/map/<str:map_id>/', maps_by_id, name='maps_by_id')
+    path('api/map/<str:map_id>/', maps_by_id, name='maps_by_id'),
     ]

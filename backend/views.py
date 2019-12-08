@@ -95,6 +95,23 @@ class Course(viewsets.ViewSet):
 
 
 class Map(viewsets.ViewSet):
+
+    @action(detail=True, methods=['get'])
+    def map_by_institute_majorId(self, request, *args, **kwargs):
+        id = request.query_params.get('inst_id')
+        degre = request.query_params.get('degree')
+        if id is None or degre is None:
+            return Response({'message': 'invalid input parameter'}, status=status.HTTP_200_OK)
+
+        maps = MapsDmapsMeta.objects.filter(degree = degre)
+        serializer = MapDmapMetaSerializer(maps)
+
+        if maps.exists():
+            return Response(serializer.data)
+        else:
+            return Response({}, status=status.HTTP_404_NOT_FOUND)
+
+
     """
     Get a map by map_id
     TODO:Return all maps for a particular institution and major
