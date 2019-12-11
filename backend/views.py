@@ -210,11 +210,29 @@ class Map(viewsets.ViewSet):
         for q in range(0, len(queries)):
             print(str(q) + "   :  "  + queries[q])
         # is there an elegant solution?
+
+        semX_classY = {
+            "sem1_class1" : None, "sem1_class2" : None, "sem1_class3" : None, "sem1_class4" : None, "sem1_class5" : None, "sem1_class6" : None, "sem1_class7" : None,
+            "sem2_class1" : None, "sem2_class2" : None, "sem2_class3" : None, "sem2_class4" : None, "sem2_class5" : None, "sem2_class6" : None, "sem2_class7" : None,
+            "sem3_class1" : None, "sem3_class2" : None, "sem3_class3" : None, "sem3_class4" : None, "sem3_class5" : None, "sem3_class6" : None, "sem3_class7" : None,
+            "sem4_class1" : None, "sem4_class2" : None, "sem4_class3" : None, "sem4_class4" : None, "sem4_class5" : None, "sem4_class6" : None, "sem4_class7" : None, 
+            "sem5_class1" : None, "sem5_class2" : None, "sem5_class3" : None, "sem5_class4" : None, "sem5_class5" : None, "sem5_class6" : None, "sem5_class7" : None,
+            "sem6_class1" : None, "sem6_class2" : None, "sem6_class3" : None, "sem6_class4" : None, "sem6_class5" : None, "sem6_class6" : None, "sem6_class7" : None,
+            "sem7_class1" : None, "sem7_class2" : None, "sem7_class3" : None, "sem7_class4" : None, "sem7_class5" : None, "sem7_class6" : None, "sem7_class7" : None,
+            "sem8_class1" : None, "sem8_class2" : None, "sem8_class3" : None, "sem8_class4" : None, "sem8_class5" : None, "sem8_class6" : None, "sem8_class7" : None, 
+        }
+
+        for key in semX_classY.keys():
+            try:
+                semX_classY[key] = request.data[key]
+            except KeyError: 
+                pass
+
         with connection.cursor() as cursor:
             # Gather Meta Info
             cursor.execute(queries[0], [request.data["map_name"]])
-            cursor.execute(queries[1], [request.data["degree"]])
-            cursor.execute(queries[2], [request.data["start_year"]])
+            cursor.execute(queries[1], [request.data["degree"].title()])
+            cursor.execute(queries[2], [request.data["start_year"].upper()])
             cursor.execute(queries[3])
             cursor.execute(queries[4], [request.data["institute_id"]])
             cursor.execute(queries[5], [request.data["submit_id"]])
@@ -227,72 +245,85 @@ class Map(viewsets.ViewSet):
 
             # Prepare courses for insert
             cursor.execute(queries[10])
-            cursor.execute(queries[11], [checkNullCourse(request.data["sem1_class1"])])
-            cursor.execute(queries[12], [checkNullCourse(request.data["sem1_class2"])])
-            cursor.execute(queries[13], [checkNullCourse(request.data["sem1_class3"])])
-            cursor.execute(queries[14], [checkNullCourse(request.data["sem1_class4"])])
-            cursor.execute(queries[15], [checkNullCourse(request.data["sem1_class5"])])
-            cursor.execute(queries[16], [checkNullCourse(request.data["sem1_class6"])])
-            cursor.execute(queries[17], [checkNullCourse(request.data["sem1_class7"])])
-            cursor.execute(queries[18], [checkNullCourse(request.data["sem2_class1"])])
-            cursor.execute(queries[19], [checkNullCourse(request.data["sem2_class2"])])
-            cursor.execute(queries[20], [checkNullCourse(request.data["sem2_class3"])])
-            cursor.execute(queries[21], [checkNullCourse(request.data["sem2_class4"])])
-            cursor.execute(queries[22], [checkNullCourse(request.data["sem2_class5"])])
-            cursor.execute(queries[23], [checkNullCourse(request.data["sem2_class6"])])
-            cursor.execute(queries[24], [checkNullCourse(request.data["sem2_class7"])])
-            cursor.execute(queries[25], [checkNullCourse(request.data["sem3_class1"])])
-            cursor.execute(queries[26], [checkNullCourse(request.data["sem3_class2"])])
-            cursor.execute(queries[27], [checkNullCourse(request.data["sem3_class3"])])
-            cursor.execute(queries[28], [checkNullCourse(request.data["sem3_class4"])])
-            cursor.execute(queries[29], [checkNullCourse(request.data["sem3_class5"])])
-            cursor.execute(queries[30], [checkNullCourse(request.data["sem3_class6"])])
-            cursor.execute(queries[31], [checkNullCourse(request.data["sem3_class7"])])
-            cursor.execute(queries[32], [checkNullCourse(request.data["sem4_class1"])])
-            cursor.execute(queries[33], [checkNullCourse(request.data["sem4_class2"])])
-            cursor.execute(queries[34], [checkNullCourse(request.data["sem4_class3"])])
-            cursor.execute(queries[35], [checkNullCourse(request.data["sem4_class4"])])
-            cursor.execute(queries[36], [checkNullCourse(request.data["sem4_class5"])])
-            cursor.execute(queries[37], [checkNullCourse(request.data["sem4_class6"])])
-            cursor.execute(queries[38], [checkNullCourse(request.data["sem4_class7"])])
-            cursor.execute(queries[39], [checkNullCourse(request.data["sem5_class1"])])
-            cursor.execute(queries[40], [checkNullCourse(request.data["sem5_class2"])])
-            cursor.execute(queries[41], [checkNullCourse(request.data["sem5_class3"])])
-            cursor.execute(queries[42], [checkNullCourse(request.data["sem5_class4"])])
-            cursor.execute(queries[43], [checkNullCourse(request.data["sem5_class5"])])
-            cursor.execute(queries[44], [checkNullCourse(request.data["sem5_class6"])])
-            cursor.execute(queries[45], [checkNullCourse(request.data["sem5_class7"])])
-            cursor.execute(queries[46], [checkNullCourse(request.data["sem6_class1"])])
-            cursor.execute(queries[47], [checkNullCourse(request.data["sem6_class2"])])
-            cursor.execute(queries[48], [checkNullCourse(request.data["sem6_class3"])])
-            cursor.execute(queries[49], [checkNullCourse(request.data["sem6_class4"])])
-            cursor.execute(queries[50], [checkNullCourse(request.data["sem6_class5"])])
-            cursor.execute(queries[51], [checkNullCourse(request.data["sem6_class6"])])
-            cursor.execute(queries[52], [checkNullCourse(request.data["sem6_class7"])])
-            cursor.execute(queries[53], [checkNullCourse(request.data["sem7_class1"])])
-            cursor.execute(queries[54], [checkNullCourse(request.data["sem7_class2"])])
-            cursor.execute(queries[55], [checkNullCourse(request.data["sem7_class3"])])
-            cursor.execute(queries[56], [checkNullCourse(request.data["sem7_class4"])])
-            cursor.execute(queries[57], [checkNullCourse(request.data["sem7_class5"])])
-            cursor.execute(queries[58], [checkNullCourse(request.data["sem7_class6"])])
-            cursor.execute(queries[59], [checkNullCourse(request.data["sem7_class7"])])
-            cursor.execute(queries[60], [checkNullCourse(request.data["sem8_class1"])])
-            cursor.execute(queries[61], [checkNullCourse(request.data["sem8_class2"])])
-            cursor.execute(queries[62], [checkNullCourse(request.data["sem8_class3"])])
-            cursor.execute(queries[63], [checkNullCourse(request.data["sem8_class4"])])
-            cursor.execute(queries[64], [checkNullCourse(request.data["sem8_class5"])])
-            cursor.execute(queries[65], [checkNullCourse(request.data["sem8_class6"])])
-            cursor.execute(queries[66], [checkNullCourse(request.data["sem8_class7"])])
+            cursor.execute(queries[11], [semX_classY["sem1_class1"]])
+            cursor.execute(queries[12], [semX_classY["sem1_class2"]])
+            cursor.execute(queries[13], [semX_classY["sem1_class3"]])
+            cursor.execute(queries[14], [semX_classY["sem1_class4"]])
+            cursor.execute(queries[15], [semX_classY["sem1_class5"]])
+            cursor.execute(queries[16], [semX_classY["sem1_class6"]])
+            cursor.execute(queries[17], [semX_classY["sem1_class7"]])
+            cursor.execute(queries[18], [semX_classY["sem2_class1"]])
+            cursor.execute(queries[19], [semX_classY["sem2_class2"]])
+            cursor.execute(queries[20], [semX_classY["sem2_class3"]])
+            cursor.execute(queries[21], [semX_classY["sem2_class4"]])
+            cursor.execute(queries[22], [semX_classY["sem2_class5"]])
+            cursor.execute(queries[23], [semX_classY["sem2_class6"]])
+            cursor.execute(queries[24], [semX_classY["sem2_class7"]])
+            cursor.execute(queries[25], [semX_classY["sem3_class1"]])
+            cursor.execute(queries[26], [semX_classY["sem3_class2"]])
+            cursor.execute(queries[27], [semX_classY["sem3_class3"]])
+            cursor.execute(queries[28], [semX_classY["sem3_class4"]])
+            cursor.execute(queries[29], [semX_classY["sem3_class5"]])
+            cursor.execute(queries[30], [semX_classY["sem3_class6"]])
+            cursor.execute(queries[31], [semX_classY["sem3_class7"]])
+            cursor.execute(queries[32], [semX_classY["sem4_class1"]])
+            cursor.execute(queries[33], [semX_classY["sem4_class2"]])
+            cursor.execute(queries[34], [semX_classY["sem4_class3"]])
+            cursor.execute(queries[35], [semX_classY["sem4_class4"]])
+            cursor.execute(queries[36], [semX_classY["sem4_class5"]])
+            cursor.execute(queries[37], [semX_classY["sem4_class6"]])
+            cursor.execute(queries[38], [semX_classY["sem4_class7"]])
+            cursor.execute(queries[39], [semX_classY["sem5_class1"]])
+            cursor.execute(queries[40], [semX_classY["sem5_class2"]])
+            cursor.execute(queries[41], [semX_classY["sem5_class3"]])
+            cursor.execute(queries[42], [semX_classY["sem5_class4"]])
+            cursor.execute(queries[43], [semX_classY["sem5_class5"]])
+            cursor.execute(queries[44], [semX_classY["sem5_class6"]])
+            cursor.execute(queries[45], [semX_classY["sem5_class7"]])
+            cursor.execute(queries[46], [semX_classY["sem6_class1"]])
+            cursor.execute(queries[47], [semX_classY["sem6_class2"]])
+            cursor.execute(queries[48], [semX_classY["sem6_class3"]])
+            cursor.execute(queries[49], [semX_classY["sem6_class4"]])
+            cursor.execute(queries[50], [semX_classY["sem6_class5"]])
+            cursor.execute(queries[51], [semX_classY["sem6_class6"]])
+            cursor.execute(queries[52], [semX_classY["sem6_class7"]])
+            cursor.execute(queries[53], [semX_classY["sem7_class1"]])
+            cursor.execute(queries[54], [semX_classY["sem7_class2"]])
+            cursor.execute(queries[55], [semX_classY["sem7_class3"]])
+            cursor.execute(queries[56], [semX_classY["sem7_class4"]])
+            cursor.execute(queries[57], [semX_classY["sem7_class5"]])
+            cursor.execute(queries[58], [semX_classY["sem7_class6"]])
+            cursor.execute(queries[59], [semX_classY["sem7_class7"]])
+            cursor.execute(queries[60], [semX_classY["sem8_class1"]])
+            cursor.execute(queries[61], [semX_classY["sem8_class2"]])
+            cursor.execute(queries[62], [semX_classY["sem8_class3"]])
+            cursor.execute(queries[63], [semX_classY["sem8_class4"]])
+            cursor.execute(queries[64], [semX_classY["sem8_class5"]])
+            cursor.execute(queries[65], [semX_classY["sem8_class6"]])
+            cursor.execute(queries[66], [semX_classY["sem8_class7"]])
 
             # Insert courses into MAPS_DMAPS_LISTS
             cursor.execute(queries[67])
 
-        return Response( { "message": "map successfully created." }, status=status.HTTP_201_CREATED, content_type="application/json")
+        map_id = get_latest_map_id()
 
-def checkNullCourse(course_input):
-    if course_input is "":
-        return None
-    return course_input
+        response = { 
+            "message": "map successfully created.",
+            "map_id" : map_id, 
+        }
+
+        return Response( response, status=status.HTTP_201_CREATED, content_type="application/json")
+
+
+def get_latest_map_id():
+
+    query = "SELECT MAX(map_id) FROM MAPS_DMAPS_META"
+
+    with connection.cursor() as cursor:
+        cursor.execute(query)
+        result = cursor.fetchone()
+
+    return result[0]
 
 def mapExists(map_id):
     """
