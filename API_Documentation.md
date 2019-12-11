@@ -1,7 +1,5 @@
 # API Documentation
 
-Currently under development. 
-
 Link to API: https://cs355map.herokuapp.com
 
 ## Endpoints
@@ -123,6 +121,58 @@ There are two ways to search courses; by name or description of the course.
 
 **Content** : `{ 'message' : 'map_id does not exist' }`
 
+### Get the latest map available by specifying Institution, Major, and Start Year
+
+**URL** : `/api/map/?id={institute_id}&major={major}&start_year{start_year}`
+
+**Method** : `GET`
+
+#### Successful Response:
+
+* **Code** : `200 OK`
+
+* **[Response for example request "/api/map/?id=17&major=Computer+Science&start_year=spring+2020](response/get_latest_map.json)**
+
+#### Error Response
+
+**Condition** : If no maps are found.
+
+**Code** : `404 NOT FOUND`
+
+**Content** : `{ 'message' : 'No maps found' }`
+
+**Condition** : If search parameters are invalid.
+
+**Code** : `400 BAD REQUEST`
+
+**Content** : `{ 'message' : 'malformed query' }`
+
+### Get all maps available for a major in a particular institution
+
+**URL** : `/api/map/?id={institute_id}&major={major}`
+
+**Method** : `GET`
+
+#### Successful Response:
+
+* **Code** : `200 OK`
+
+* **[Response for example request "/api/map/?id=17&major=Computer+Science](response/get_maps_by_inst_and_major.json)**
+
+#### Error Response
+
+**Condition** : If no maps are found.
+
+**Code** : `404 NOT FOUND`
+
+**Content** : `{ 'message' : 'No maps found' }`
+
+**Condition** : If search parameters are invalid.
+
+**Code** : `400 BAD REQUEST`
+
+**Content** : `{ 'message' : 'malformed query' }`
+
 ### Delete a map by map_id
 
 **URL** : `/api/map/{map_id}`
@@ -156,10 +206,3 @@ There are two ways to search courses; by name or description of the course.
 * **[example request](request/addMap.html)**
 
 
-## TO BE IMPLEMENTED BY NEXT MILESTONE
-
-### Endpoints:
-
-GET /api/map/q?institute_id='17'&degree='Computer Science' : Search maps available for a campus and major
-
-PUT /api/map/{map_id}:  Make changes to a map

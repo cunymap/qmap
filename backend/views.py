@@ -90,31 +90,67 @@ class Course(viewsets.ViewSet):
             return Response({ 'message': 'No matching courses found' }, status=status.HTTP_200_OK)
         
         else:
-            json_data = json.dumps(result, indent=4, default=str)
-            return HttpResponse(json_data, content_type="application/json")
+            # json_data = json.dumps(result, indent=4, default=str)
+            # return HttpResponse(json_data, content_type="application/json")
+            return Response(result, status=status.HTTP_200_OK)
 
 
 class Map(viewsets.ViewSet):
 
     @action(detail=True, methods=['get'])
     def map_by_institute_majorId(self, request, *args, **kwargs):
-        id = request.query_params.get('inst_id')
-        degre = request.query_params.get('degree')
-        if id is None or degre is None:
-            return Response({'message': 'invalid input parameter'}, status=status.HTTP_200_OK)
+        
+        institute_id = request.query_params.get('id')
+        degree = request.query_params.get('major')
+        start_year = request.query_params.get('start_year')
 
-        maps = MapsDmapsMeta.objects.filter(degree = degre)
-        serializer = MapDmapMetaSerializer(maps)
+        # Validate inputs
+        if institute_id is None or degree is None:
+            return Response({ 'message': 'malformed query'}, status=status.HTTP_400_BAD_REQUEST)
 
-        if maps.exists():
-            return Response(serializer.data)
+
+        if start_year is not None:
+        # Return the latest map by institution_id, major, and start_year
+
+            queries = get_queries_from_file("findLatestMap.sql")
+
+            with connection.cursor() as cursor:
+                cursor.execute(queries[0], [institute_id])
+                cursor.execute(queries[1], [degree])
+                cursor.execute(queries[2], [start_year])
+                cursor.execute(queries[3])
+                cursor.execute(queries[4])
+                result = cursor.fetchone()
+
+            if result is None:
+                return Response( { 'message': 'No maps were found' }, status=status.HTTP_404_NOT_FOUND )
+            
+            return Response( { "map_id" : result[0] }, status=status.HTTP_200_OK)
+
         else:
-            return Response({}, status=status.HTTP_404_NOT_FOUND)
+        # Return all maps available for an institution and major
+
+            query = "select map_id, start_year from MAPS_DMAPS_META where institute_id=%s and degree=%s"
+
+            with connection.cursor() as cursor:
+                cursor.execute(query, [institute_id, degree])
+                rows = cursor.fetchall()
+
+            keys = ('map_id', 'start_year')
+            result = []
+
+            for row in rows:
+                row = (row[0], row[1].replace('SP', 'Spring', 1))
+                row = (row[0], row[1].replace('FA', 'Fall', 1))
+                result.append(OrderedDict(zip(keys,row)))
+
+            if len(result) == 0:
+                return Response({"message": "no maps found"}, status=status.HTTP_404_NOT_FOUND)
+            return Response(result, status=status.HTTP_200_OK)
 
 
     """
     Get a map by map_id
-    TODO:Return all maps for a particular institution and major
     """
     @action(detail=True, methods=['get'])
     def get_map_by_id(self, request, map_id, format=None):
@@ -136,9 +172,7 @@ class Map(viewsets.ViewSet):
         for row in rows:
             result.append(OrderedDict(zip(keys,row)))
 
-        json_data = json.dumps(result, indent=4)
-
-        return HttpResponse(json_data, content_type="application/json")
+        return Response(result, status=status.HTTP_200_OK)
     
     """
     Delete a map by map_id

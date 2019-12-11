@@ -30,13 +30,14 @@ class DocsView(APIView):
     def get(self, request, *args, **kwargs):
 
         apidocs = [
-                    ('Campuses', request.build_absolute_uri('api/campuses/')),
-                    ('Degrees', request.build_absolute_uri('api/degrees/17/')),
-                    ('Course', request.build_absolute_uri('api/course/c000737/')),
-                    ('CourseSearchByClassName', request.build_absolute_uri('api/course/?q=355&id=17&major=computer%20science')),
-                    ('CourseSearchByClassDescription', request.build_absolute_uri('api/course/?q=Programming&id=17&major=computer%20science')),
-                    ('Map', request.build_absolute_uri('api/map/2')),
-                    ('MapsByInstitueAndMajor', request.build_absolute_uri('api/map/?inst_id=17&degree=computer%20science'))
+                    ('Get a list of Campuses', request.build_absolute_uri('api/campuses/')),
+                    ('Get a list of Degrees for a campus/institution', request.build_absolute_uri('api/degrees/17/')),
+                    ('Get a course by course_id', request.build_absolute_uri('api/course/c000737/')),
+                    ('Search courses by class name', request.build_absolute_uri('api/course/?q=355&id=17&major=computer%20science')),
+                    ('Search courses by class description', request.build_absolute_uri('api/course/?q=Programming&id=17&major=computer%20science')),
+                    ('Get a map by map_id', request.build_absolute_uri('api/map/2')),
+                    ('Get the latest map', request.build_absolute_uri('api/map/?id=17&major=computer%20science&start_year=Fall%202020')),
+                    ('Get Maps available for an Institution and Major', request.build_absolute_uri('api/map/?id=17&major=computer%20science')),
                 ]
 
         apidocs = OrderedDict(apidocs)
