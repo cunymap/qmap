@@ -224,9 +224,13 @@ class Map(viewsets.ViewSet):
 
         for key in semX_classY.keys():
             try:
-                semX_classY[key] = request.data[key]
+                if(request.data[key] == ""):
+                    continue
+                else:
+                    semX_classY[key] = request.data[key]
             except KeyError: 
                 pass
+
 
         with connection.cursor() as cursor:
             # Gather Meta Info
@@ -316,6 +320,9 @@ class Map(viewsets.ViewSet):
 
 
 def get_latest_map_id():
+    """
+    Return the map_id of the latest created map
+    """
 
     query = "SELECT MAX(map_id) FROM MAPS_DMAPS_META"
 
