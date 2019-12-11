@@ -72,6 +72,14 @@ TEMPLATES = [
     },
 ]
 
+REST_FRAMEWORK = {
+    'PAGINATE_BY': 100,
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+        'backend.renderers.BrowsableAPIRendererWithoutForms',
+    ),
+}
+
 WSGI_APPLICATION = 'backend.wsgi.application'
 
 
