@@ -1,6 +1,6 @@
 # API Documentation
 
-Link to API: https://cs355map.herokuapp.com
+Link to API: https://qmap-platform.herokuapp.com/
 
 ## Endpoints
 

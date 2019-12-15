@@ -25,7 +25,7 @@ SECRET_KEY = 'a#52ts&y*dxye9(#!fkmbk$gt=t4v(c7^yt2v-q)^=e#wob6fq'
 DEBUG = True
 
 ## HEROKU 
-ALLOWED_HOSTS = ['cs355map.herokuapp.com','qmap-backend.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['cs355map.herokuapp.com','qmap-backend.herokuapp.com','qmap-platform.herokuapp.com', '127.0.0.1']
 
 # Application definition
 
