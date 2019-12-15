@@ -2,7 +2,7 @@
 
 Backend of CUNY Degree Maps
 
-Link to API: [cs355map.herokuapp.com](https://cs355map.herokuapp.com)
+Link to API: [qmap-platform.herokuapp.com/](https://qmap-platform.herokuapp.com)
 
 ## Members
 
